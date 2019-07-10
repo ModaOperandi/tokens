@@ -1,4 +1,4 @@
-require 'moda_themes/version'
+require 'moda-themes/version'
 
 module ModaThemes
   if defined?(Rails) && defined?(Rails::Engine)

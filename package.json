@@ -1,13 +1,15 @@
 {
   "name": "moda-themes",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Constant themed values for modaoperandi.com",
   "repository": "http://github.com/ModaOperandi/themes",
   "author": "Team Moda",
   "license": "MIT",
   "private": false,
-  "main": "lib/assets/stylesheets/_moda_themes.scss",
+  "main": "index.js",
+  "style": "lib/assets/stylesheets/_moda-themes.scss",
   "files": [
+    "./index.js",
     "/lib/assets"
   ]
 }

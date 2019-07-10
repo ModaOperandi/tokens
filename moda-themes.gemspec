@@ -2,10 +2,10 @@
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'moda_themes/version'
+require 'moda-themes/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'moda_themes'
+  spec.name = 'moda-themes'
   spec.version = ModaThemes::VERSION
   spec.authors = ['dzucconi']
   spec.email = ['damon.zucconi@modaoperandi.com']

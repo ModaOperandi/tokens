@@ -1,4 +1,4 @@
-# moda-themes / moda_themes
+# moda-themes
 
 ## Meta
 
@@ -12,7 +12,7 @@
 Include the Ruby gem:
 
 ```ruby
-gem 'moda_themes'
+gem 'moda-themes'
 ```
 
 ```sh
@@ -22,7 +22,7 @@ bundle install
 Use the functions + mixins in your SASS/SCSS files:
 
 ```scss
-@import 'moda_themes';
+@import 'moda-themes';
 
 // Include this once to generate the `data-theme` attr styling. This is not auto-included
 // to prevent duplicate imports.
@@ -58,17 +58,58 @@ Install the package:
 yarn add moda-themes
 ```
 
+Configure node-sass `includePaths`:
+
+For Parcel: Create a .sassrc.js:
+
+```javascript
+const modaThemes = require('moda-themes');
+
+module.exports = {
+  "includePaths": [
+    ...modaThemes.includePaths
+  ]
+}
+```
+
+For Webpack: Configure sass-loader:
+
+```javascript
+const modaThemes = require("moda-themes");
+
+const config = {
+  // ...
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "sass-loader",
+            options: { includePaths: [...modaThemes.includePaths] }
+          }
+        ]
+      }
+    ]
+  }
+};
+
+module.exports = config;
+```
+
 Use the functions + mixins in your SASS/SCSS files:
 
 ```scss
-@import '~moda-themes';
+@import 'moda-themes';
 
 // See above...
 ```
 
 ## Releasing
 
-[Increment the versions](https://semver.org/) in [package.json](package.json) and [lib/moda_themes/version.rb](lib/moda_themes/version.rb).
+[Increment the versions](https://semver.org/) in [package.json](package.json) and [lib/moda-themes/version.rb](lib/moda-themes/version.rb).
 
 Run `rake release` to release the Ruby gem.
 
