@@ -1,4 +1,4 @@
-# @moda/themes
+# moda-themes / moda_themes
 
 ## Meta
 
