@@ -1,0 +1,10 @@
+{
+  "name": "@moda/tokens",
+  "version": "0.0.0",
+  "description": "Constant themed values for modaoperandi.com",
+  "main": "index.js",
+  "repository": "http://github.com/ModaOperandi/tokens",
+  "author": "Team Moda",
+  "license": "MIT",
+  "private": true
+}

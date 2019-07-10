@@ -1,0 +1,15 @@
+@import 'themes';
+
+@mixin theme-variables-for($theme) {
+  @each $category-key, $category-values in map-deep-get($themes, $theme) {
+    @each $key, $value in $category-values {
+      --theme-#{$category-key}-#{$key}: #{$value};
+    }
+  }
+}
+
+@each $theme-name, $_theme-values in $themes {
+  [data-theme="#{$theme-name}"] {
+    @include theme-variables-for($theme-name);
+  }
+}

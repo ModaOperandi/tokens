@@ -1,0 +1,44 @@
+$font-stack-gotham: 'Gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-stack-miller-headline: 'Miller Headline', Georgia, 'Times New Roman',
+  Times, serif;
+$font-stack-moda-sans: 'Moda Operandi Sans', Arial, sans-serif;
+$font-stack-moda-serif: 'Moda Operandi Serif', 'Times New Roman', Times, serif;
+$font-stack-caslon: 'Caslon', 'Times New Roman', Times, serif;
+
+$themes: (
+  legacy: (
+    font-families: (
+      title: $font-stack-miller-headline,
+      sans: $font-stack-gotham,
+      serif: $font-stack-miller-headline,
+      body: $font-stack-miller-headline
+    )
+  ),
+  global: (
+    font-families: (
+      title: $font-stack-moda-serif,
+      sans: $font-stack-moda-sans,
+      serif: $font-stack-moda-serif,
+      body: $font-stack-caslon
+    )
+  )
+);
+
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+@function theme($theme, $keys...) {
+  @return map-deep-get($themes, $theme, $keys...);
+}
+
+@function v($var) {
+  @return var(--#{$var});
+}
+
+@function font-family($name) {
+  @return v('theme-font-families-#{$name}');
+}
