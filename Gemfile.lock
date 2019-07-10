@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    moda_tokens (0.0.1.pre1)
+    moda_themes (0.0.1.pre1)
       sass (~> 3.3)
 
 GEM
@@ -39,7 +39,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   byebug
-  moda_tokens!
+  moda_themes!
   rake (~> 10.0)
   rspec (~> 3.0)
 

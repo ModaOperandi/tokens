@@ -1,9 +1,9 @@
 {
-  "name": "@moda/tokens",
+  "name": "@moda/themes",
   "version": "0.0.0",
   "description": "Constant themed values for modaoperandi.com",
   "main": "index.js",
-  "repository": "http://github.com/ModaOperandi/tokens",
+  "repository": "http://github.com/ModaOperandi/themes",
   "author": "Team Moda",
   "license": "MIT",
   "private": true

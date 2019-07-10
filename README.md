@@ -1,4 +1,4 @@
-# @moda/tokens
+# @moda/themes
 
 ## Meta
 

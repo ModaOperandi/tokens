@@ -2,15 +2,15 @@
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'moda_tokens/version'
+require 'moda_themes/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'moda_tokens'
-  spec.version = ModaTokens::VERSION
+  spec.name = 'moda_themes'
+  spec.version = ModaThemes::VERSION
   spec.authors = ['dzucconi']
   spec.email = ['damon.zucconi@modaoperandi.com']
   spec.summary = 'Constant themed values for modaoperandi.com'
-  spec.homepage = "https://github.com/ModaOperandi/tokens"
+  spec.homepage = "https://github.com/ModaOperandi/themes"
   spec.license = 'MIT'
 
   spec.metadata['homepage_uri'] = spec.homepage

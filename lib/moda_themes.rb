@@ -1,6 +1,6 @@
-require 'moda_tokens/version'
+require 'moda_themes/version'
 
-module ModaTokens
+module ModaThemes
   if defined?(Rails) && defined?(Rails::Engine)
     class Engine < ::Rails::Engine
       config.assets.paths << File.expand_path("./assets", __dir__)
