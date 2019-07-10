@@ -65,3 +65,11 @@ Use the functions + mixins in your SASS/SCSS files:
 
 // See above...
 ```
+
+## Releasing
+
+[Increment the versions](https://semver.org/) in [package.json](package.json) and [lib/moda_themes/version.rb](lib/moda_themes/version.rb).
+
+Run `rake release` to release the Ruby gem.
+
+Run `yarn publish` to publish the NPM package.
