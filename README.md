@@ -2,7 +2,7 @@
 
 ## Meta
 
-* **State**: development
+* **State**: production
 * **Point people**: [@dzucconi](https://github.com/dzucconi)
 
 ## Getting started
