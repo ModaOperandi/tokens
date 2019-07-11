@@ -102,7 +102,7 @@ module.exports = config;
 Use the functions + mixins in your SASS/SCSS files:
 
 ```scss
-@import 'moda-themes';
+@import 'moda-themes/all';
 
 // See above...
 ```
