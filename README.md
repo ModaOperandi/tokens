@@ -2,8 +2,8 @@
 
 ## Meta
 
-* **State**: production
-* **Point people**: [@dzucconi](https://github.com/dzucconi)
+- **State**: production
+- **Point people**: [@dzucconi](https://github.com/dzucconi)
 
 ## Getting started
 
@@ -22,7 +22,7 @@ bundle install
 Use the functions + mixins in your SASS/SCSS files:
 
 ```scss
-@import 'moda-themes';
+@import "moda-themes";
 
 // Include this once to generate the `data-theme` attr styling. This is not auto-included
 // to prevent duplicate imports.
@@ -45,7 +45,7 @@ Use the functions + mixins in your SASS/SCSS files:
 
 // Use the functions to access themed values:
 p {
-  font-family: font-family('sans');
+  font-family: font-family("sans");
   // font-family: var(--theme-font-families-sans);
 }
 ```
@@ -63,13 +63,11 @@ Configure node-sass `includePaths`:
 For Parcel: Create a .sassrc.js:
 
 ```javascript
-const modaThemes = require('moda-themes');
+const modaThemes = require("moda-themes");
 
 module.exports = {
-  "includePaths": [
-    ...modaThemes.includePaths
-  ]
-}
+  includePaths: [...modaThemes.includePaths]
+};
 ```
 
 For Webpack: Configure sass-loader:
@@ -102,9 +100,9 @@ module.exports = config;
 Use the functions + mixins in your SASS/SCSS files:
 
 ```scss
-@import 'moda-themes/all';
+@import "moda-themes/all";
 
-// See above...
+// Usage: See above...
 ```
 
 ## Releasing

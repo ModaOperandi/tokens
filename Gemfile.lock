@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    moda-themes (0.0.1)
+    moda-themes (0.0.2)
       sass (~> 3.3)
 
 GEM
