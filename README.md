@@ -102,8 +102,38 @@ Use the functions + mixins in your SASS/SCSS files:
 ```scss
 @import "moda-themes/all";
 
-// Usage: See above...
+// ...
 ```
+
+## API
+
+### Functions
+
+#### `font-family($name)`
+
+Returns a font-family variable.
+
+#### `get-from-theme($theme-name, $keys...)`
+
+Undocumented.
+
+#### `themed-value-exists($category, $key)`
+
+Undocumented.
+
+### Mixins
+
+#### `set-root-theme($theme-name)`
+
+Sets theme variables at the `:root` (include this once)
+
+#### `data-themes()`
+
+Inlcudes the full set of themes under `[data-theme="name"]` selectors. (include this once)
+
+#### `theme-variables-for($theme)`
+
+Allows you to pull in a set of themed variables manually.
 
 ## Releasing
 
