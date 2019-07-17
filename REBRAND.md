@@ -4,6 +4,8 @@ To facillitate the rebrand transition we're extracting global values that are ch
 
 This document contains some information about how to map between old and new styles and what you need to know going forward.
 
+See [USAGE](USAGE.md) for usage information.
+
 #### Old values are keyed under `legacy`. New values are keyed under `global`.
 
 `global` is a good name for this going forward since it will represent obviously global values. We'll eventually be supporting subtle variations in color and typography across mens/womens, so new themes will be added to this map.
