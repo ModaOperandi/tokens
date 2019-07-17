@@ -105,6 +105,14 @@ Use the functions + mixins in your SASS/SCSS files:
 // ...
 ```
 
+## Usage
+
+See [USAGE](USAGE.md).
+
+## Transitioning
+
+See [REBRAND](REBRAND.md).
+
 ## API
 
 ### Functions
