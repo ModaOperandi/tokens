@@ -57,3 +57,18 @@ font-family: font-family('serif');
 font-weight: lighter;
 font-style: italic;
 ```
+
+#### `Caslon`.
+
+If you wish to use a serif typeface but know you'll want it to be `Caslon` (in certain body copy for instance):
+
+```scss
+font-family: font-family('body');
+```
+
+`Caslon` is mapped to `Miller Headline` for the `legacy` theme. `Caslon` supports italics.
+
+
+### Do not fear faux styles
+
+The font-face declarations for the rebranded values [have been overloaded to ensure that faux styles (faux bold, faux italic) are impossible.](https://github.com/ModaOperandi/moda-typography#about) This means that post-transition every instance of `font-weight: bold;` can be safely deleted, for instance, it will have no effect otherwise.
