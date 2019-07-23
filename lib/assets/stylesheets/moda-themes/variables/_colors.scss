@@ -1,0 +1,72 @@
+$colors-ui: (
+  "strawberry": #fadedd,
+  "code-red": #ee0700,
+  "lime": #e3fbe2,
+  "money-good": #046c00
+);
+
+$colors-universal: (
+  "white": #ffffff,
+  "black": #000000
+);
+
+$colors-greyscale: map-merge(
+  $colors-universal,
+  (
+    "cement": #646464,
+    "nokia": #969696,
+    "sidewalk": #afafaf,
+    "elephant": #bebebe,
+    "cashmere": #dedede,
+    "noise": #f5f5f5
+  )
+);
+
+$colors-legacy: map-merge(
+  $colors-universal,
+  (
+    "legacy-burgundy-nav": #734f59,
+    "legacy-burgundy-red": #3c1315,
+    "legacy-red": #5b1a28,
+    "legacy-pink": #f4e6e6,
+    "legacy-gold": #9b885f,
+    "legacy-error-red": #f62b0f,
+    "legacy-blue": #599ad3
+  )
+);
+
+$colors-global: map-merge(
+  $colors-universal,
+  map-merge(
+    $colors-ui,
+    (
+      "brick": #933a20,
+      "burnt-orange": #d56b27,
+      "coral": #ff9279,
+      "goldenrod": #ba912e,
+      "canary": #f0f659,
+      "lilac": #d7b3d0,
+      "fuchsia": #c44cb0,
+      "forest-green": #003728,
+      "moss-green": #68683b,
+      "seafoam": #b1bfaa,
+      "klein-blue": #263078,
+      "cornflower-blue": #7f9acf,
+      "blush": #f3ded9,
+      "cream": #f8f5ee,
+      "light-grey": #f2f3f5,
+      "white": white
+    )
+  )
+);
+
+$colors-flat: map-merge(
+  map-merge($colors-legacy, $colors-global),
+  $colors-greyscale
+);
+
+$colors: (
+  legacy: $colors-legacy,
+  global: $colors-global,
+  greyscale: $colors-greyscale
+);

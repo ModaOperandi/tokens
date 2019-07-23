@@ -1,0 +1,27 @@
+$font-stack-gotham: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack-miller-headline: "Miller Headline", Georgia, "Times New Roman",
+  Times, serif;
+$font-stack-moda-sans: "Moda Operandi Sans", Arial, sans-serif;
+$font-stack-moda-serif: "Moda Operandi Serif", "Times New Roman", Times, serif;
+$font-stack-caslon: "Caslon", "Times New Roman", Times, serif;
+
+$fonts: (
+  legacy: (
+    title: $font-stack-miller-headline,
+    sans: $font-stack-gotham,
+    serif: $font-stack-miller-headline,
+    body: $font-stack-miller-headline
+  ),
+  global: (
+    title: $font-stack-moda-serif,
+    sans: $font-stack-moda-sans,
+    serif: $font-stack-moda-serif,
+    body: $font-stack-caslon
+  )
+);
+
+$letter-spacing: (
+  base: 0,
+  wide: 0.04em,
+  wider: 0.1em
+);

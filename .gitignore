@@ -6,3 +6,4 @@ dist/
 node_modules/
 examples/
 moda-themes*.gem
+demo/
