@@ -11,7 +11,7 @@
 }
 
 @mixin data-themes() {
-  @each $theme-name in map-keys($map: $themes) {
+  @each $theme-name in map-keys($themes) {
     [data-theme="#{$theme-name}"] {
       @include theme-variables-for($theme-name);
     }

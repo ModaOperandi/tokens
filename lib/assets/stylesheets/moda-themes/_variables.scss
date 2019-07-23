@@ -1,0 +1,69 @@
+@import "variables/typography";
+@import "variables/colors";
+
+$themes: (
+  legacy: (
+    font-families: map-get($fonts, legacy),
+    colors: (
+      transition-gold-to-black: map-get($colors-legacy, "legacy-gold"),
+      transition-gold-to-burnt-orange: map-get($colors-legacy, "legacy-gold"),
+      transition-burgundy-nav-to-black:
+        map-get($colors-legacy, "legacy-burgundy-nav"),
+      transition-burgundy-red-to-black:
+        map-get($colors-legacy, "legacy-burgundy-red"),
+      transition-burgundy-red-to-burnt-orange:
+        map-get($colors-legacy, "legacy-burgundy-red"),
+      transition-red-to-black: map-get($colors-legacy, "legacy-red"),
+      transition-blue-to-burnt-orange: map-get($colors-legacy, "legacy-blue"),
+      transition-error-red-to-fuchsia:
+        map-get($colors-legacy, "legacy-error-red")
+    )
+  ),
+  global: (
+    font-families: map-get($fonts, global),
+    colors: (
+      transition-gold-to-black: map-get($colors-global, "black"),
+      transition-gold-to-burnt-orange: map-get($colors-global, "burnt-orange"),
+      transition-burgundy-nav-to-black: map-get($colors-global, "black"),
+      transition-burgundy-red-to-black: map-get($colors-global, "black"),
+      transition-burgundy-red-to-burnt-orange:
+        map-get($colors-global, "burnt-orange"),
+      transition-red-to-black: map-get($colors-global, "black"),
+      transition-blue-to-burnt-orange: map-get($colors-global, "burnt-orange"),
+      transition-error-red-to-fuchsia: map-get($colors-global, "fuchsia")
+    )
+  ),
+  // global: (
+  //   font-families: map-get($fonts, global),
+  //   colors: (
+  //     primary: map-get($colors-global, "klein-blue"),
+  //     primary-alt: map-get($colors-global, "brick"),
+  //     secondary: map-get($colors-global, "goldenrod"),
+  //     background: map-get($colors-global, "seafoam"),
+  //     background-alt: map-get($colors-global, "cream"),
+  //     accent: map-get($colors-global, "coral")
+  //   )
+  // ),
+  // mens: (
+  //   font-families: map-get($fonts, global),
+  //   colors: (
+  //     primary: map-get($colors-global, "cornflower-blue"),
+  //     primary-alt: map-get($colors-global, "moss-green"),
+  //     secondary: map-get($colors-global, "blush"),
+  //     background: map-get($colors-global, "light-grey"),
+  //     background-alt: map-get($colors-global, "light-grey"),
+  //     accent: map-get($colors-global, "canary")
+  //   )
+  // ),
+  // womens: (
+  //   font-families: map-get($fonts, global),
+  //   colors: (
+  //     primary: map-get($colors-global, "burnt-orange"),
+  //     primary-alt: map-get($colors-global, "lilac"),
+  //     secondary: map-get($colors-global, "forest-green"),
+  //     background: map-get($colors-global, "cream"),
+  //     background-alt: map-get($colors-global, "cream"),
+  //     accent: map-get($colors-global, "fuchsia")
+  //   )
+  // )
+);

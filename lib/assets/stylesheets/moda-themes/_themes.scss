@@ -1,56 +1,59 @@
-$font-stack-gotham: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-stack-miller-headline: "Miller Headline", Georgia, "Times New Roman",
-  Times, serif;
-$font-stack-moda-sans: "Moda Operandi Sans", Arial, sans-serif;
-$font-stack-moda-serif: "Moda Operandi Serif", "Times New Roman", Times, serif;
-$font-stack-caslon: "Caslon", "Times New Roman", Times, serif;
-
-$themes: (
-  legacy: (
-    font-families: (
-      title: $font-stack-miller-headline,
-      sans: $font-stack-gotham,
-      serif: $font-stack-miller-headline,
-      body: $font-stack-miller-headline
-    )
-  ),
-  global: (
-    font-families: (
-      title: $font-stack-moda-serif,
-      sans: $font-stack-moda-sans,
-      serif: $font-stack-moda-serif,
-      body: $font-stack-caslon
-    )
-  )
-);
+@import "variables";
 
 @function __var__($var) {
   @return var(--#{$var});
 }
 
-@function __deep-map-get__($map, $keys...) {
+@function __get__($map, $keys...) {
   @each $key in $keys {
     $map: map-get($map, $key);
   }
   @return $map;
 }
 
-@function get-from-theme($theme-name, $keys...) {
-  @return __deep-map-get__($themes, $theme-name, $keys...);
+@function __fetch__($map, $name) {
+  @if map-has-key($map, $name) {
+    @return map-get($map, $name);
+  } @else {
+    @error "ERROR: '#{$name}' is not defined";
+  }
 }
 
-@function themed-value-exists($category, $key) {
-  @each $theme-name in map-keys($map: $themes) {
+@function get-from-theme($theme-name, $keys...) {
+  @return __get__($themes, $theme-name, $keys...);
+}
+
+@function themed-value-exists($category, $key, $raise: true) {
+  @each $theme-name in map-keys($themes) {
     @if null == get-from-theme($theme-name, $category, $key) {
-      @error "ERROR: '#{$key}' is missing in #{$category} of the #{$theme-name} theme";
+      @if $raise {
+        @error "ERROR: '#{$key}' is missing in #{$category} of the #{$theme-name} theme";
+      } @else {
+        @return false;
+      }
     }
   }
 
   @return true;
 }
 
-@function font-family($name) {
-  @if themed-value-exists("font-families", $name) {
-    @return __var__("theme-font-families-#{$name}");
+@function themed-value($category, $key) {
+  @if themed-value-exists($category, $key) {
+    @return __var__("theme-#{$category}-#{$key}");
   }
+}
+
+@function font-family($key) {
+  @return themed-value("font-families", $key);
+}
+
+@function color($key) {
+  @if themed-value-exists("colors", $key, $raise: false) {
+    @return themed-value("colors", $key);
+  }
+  @return __fetch__($colors-flat, $key);
+}
+
+@function letter-spacing($key) {
+  @return __fetch__($letter-spacing, $key);
 }
