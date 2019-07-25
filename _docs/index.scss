@@ -1,0 +1,123 @@
+@import "moda-themes";
+
+// Exports out any SASS maps to a JSON files
+$__export__: export("themes.json", $themes);
+$__export__: export("colors.json", $colors);
+
+@include set-root-theme("global");
+@include data-themes;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: font-family("sans");
+  margin: 0.5em 1em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.33;
+}
+
+pre {
+  font-size: 0.75rem;
+}
+
+hr {
+  height: 1px;
+  background-color: black;
+  margin: 3em auto;
+  border: 0;
+}
+
+input {
+  font-size: 1rem;
+  font-family: font-family("sans");
+  -webkit-font-smoothing: antialiased;
+}
+
+.Palettes {
+  display: flex;
+
+  .Swatch {
+    width: 100%;
+  }
+}
+
+.Palette {
+  margin: 3em auto;
+
+  &__colors {
+    display: flex;
+    flex-wrap: wrap;
+
+    &[data-name="legacy"] {
+      position: relative;
+
+      &:after {
+        content: "DEPRECATED";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(white, 0.75);
+        transition: opacity 250ms;
+        font-size: 1.5rem;
+        pointer-events: none;
+      }
+
+      &:hover:after {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.Swatch {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 25%;
+  font-size: 0.875rem;
+  padding: 0.75em 1em 3em 1em;
+  color: white;
+
+  > span {
+    flex-basis: 50%;
+
+    &:nth-child(even) {
+      text-align: right;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 50%;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+}
+
+.FindColor {
+  padding: 0.25em 0.75em;
+  border-radius: 1rem;
+  border: 1px solid color("cashmere");
+  margin-bottom: 1em;
+
+  &:focus {
+    outline: none;
+    border-color: color("elephant");
+  }
+}
