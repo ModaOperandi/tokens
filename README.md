@@ -117,6 +117,10 @@ See [REBRAND](REBRAND.md).
 
 ### Functions
 
+#### `color($name)`
+
+Returns a color variable.
+
 #### `font-family($name)`
 
 Returns a font-family variable.
