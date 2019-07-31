@@ -1,6 +1,5 @@
 .DS_Store
 .byebug_history
-.vscode/
 .cache/
 dist/
 node_modules/
