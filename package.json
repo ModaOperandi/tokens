@@ -2,7 +2,7 @@
   "name": "moda-themes",
   "version": "0.0.4",
   "description": "Constant themed values for modaoperandi.com",
-  "repository": "http://github.com/ModaOperandi/themes",
+  "repository": "http://github.com/ModaOperandi/moda-themes",
   "author": "Team Moda",
   "license": "MIT",
   "private": false,
@@ -10,6 +10,17 @@
   "style": "lib/assets/stylesheets/_moda-themes.scss",
   "files": [
     "./index.js",
-    "/lib/assets"
-  ]
+    "/lib/assets",
+    "/data"
+  ],
+  "scripts": {
+    "build": "node scripts/export",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build"
+  },
+  "devDependencies": {
+    "gh-pages": "2.0.1",
+    "node-sass": "^4.12.0",
+    "node-sass-export": "^0.0.3"
+  }
 }

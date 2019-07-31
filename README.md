@@ -117,6 +117,10 @@ See [REBRAND](REBRAND.md).
 
 ### Functions
 
+#### `color($name)`
+
+Returns a color variable.
+
 #### `font-family($name)`
 
 Returns a font-family variable.
@@ -146,6 +150,8 @@ Allows you to pull in a set of themed variables manually.
 ## Releasing
 
 [Increment the versions](https://semver.org/) in [package.json](package.json) and [lib/moda-themes/version.rb](lib/moda-themes/version.rb).
+
+Run `yarn build` to rebuild the exported data.
 
 Run `rake release` to release the Ruby gem.
 

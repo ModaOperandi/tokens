@@ -1,9 +1,11 @@
 const sass = require("node-sass");
 const exportSass = require("node-sass-export");
-const modaThemes = require("moda-themes");
+const path = require("path");
+
+const modaThemes = require("../");
 
 sass.renderSync({
-  file: "./index.scss",
+  file: path.join(__dirname, "./export.scss"),
   includePaths: [...modaThemes.includePaths],
   functions: exportSass(".")
 });
