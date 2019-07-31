@@ -147,6 +147,8 @@ Allows you to pull in a set of themed variables manually.
 
 [Increment the versions](https://semver.org/) in [package.json](package.json) and [lib/moda-themes/version.rb](lib/moda-themes/version.rb).
 
+Run `yarn build` to rebuild the exported data.
+
 Run `rake release` to release the Ruby gem.
 
 Run `yarn publish` to publish the NPM package.

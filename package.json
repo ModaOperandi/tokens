@@ -10,6 +10,14 @@
   "style": "lib/assets/stylesheets/_moda-themes.scss",
   "files": [
     "./index.js",
-    "/lib/assets"
-  ]
+    "/lib/assets",
+    "/data"
+  ],
+  "scripts": {
+    "build": "node scripts/export"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "node-sass-export": "^0.0.3"
+  }
 }
