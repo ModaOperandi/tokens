@@ -17,6 +17,7 @@
     "build": "node scripts/export",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
+    "start": "cd example && yarn start",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
