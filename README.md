@@ -1,6 +1,6 @@
 # moda-themes
 
-[![CircleCI](https://img.shields.io/circleci/build/github/ModaOperandi/moda-themes?token=51b1595bd3dac6aa321b052adfc4595cc79910d6)](https://circleci.com/gh/ModaOperandi/moda-themes)
+[![CircleCI](https://img.shields.io/circleci/build/github/ModaOperandi/moda-themes?token=51b1595bd3dac6aa321b052adfc4595cc79910d6)](https://circleci.com/gh/ModaOperandi/moda-themes) [![npm](https://img.shields.io/npm/v/moda-themes)](https://www.npmjs.com/package/moda-themes)
 
 ## Meta
 
