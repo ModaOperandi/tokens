@@ -24,7 +24,21 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1rem;
   }
 
-  h1,h2,h3 {
+  h1,
+  h2,
+  h3 {
     text-align: center;
+  }
+
+  pre {
+    margin: 1em auto;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 `;
