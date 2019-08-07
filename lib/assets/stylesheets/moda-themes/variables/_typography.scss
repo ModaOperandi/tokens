@@ -20,8 +20,49 @@ $fonts: (
   )
 );
 
+$line-heights: (
+  base: 1.25,
+  sm: 1.33,
+  md: 1.5
+);
+
+// TODO: Remove deprecated aliases: [wide, wider]
 $letter-spacing: (
   base: 0,
+  sm: 0.02em,
+  md: 0.04em,
+  lg: 0.1em,
   wide: 0.04em,
   wider: 0.1em
+);
+
+$font-sizes: (
+  sm: 12px,
+  md: 13px
+);
+
+$type-treatments: (
+  secondary-title: (
+    font-family: font-family("sans"),
+    font-size: font-size("sm"),
+    letter-spacing: letter-spacing("md"),
+    line-height: line-height("base"),
+    text-transform: uppercase,
+    color: color("black")
+  ),
+  body-copy-sans: (
+    font-family: font-family("sans"),
+    font-size: font-size("md"),
+    letter-spacing: letter-spacing("sm"),
+    line-height: line-height("base"),
+    color: color("black")
+  )
+);
+
+$typography: (
+  fonts: $fonts,
+  line-heights: $line-heights,
+  letter-spacing: $letter-spacing,
+  font-sizes: $font-sizes,
+  type-treatments: $type-treatments
 );
