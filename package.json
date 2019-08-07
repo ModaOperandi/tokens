@@ -1,6 +1,6 @@
 {
   "name": "moda-themes",
-  "version": "0.0.0-development",
+  "version": "0.0.5",
   "description": "Constant themed values for modaoperandi.com",
   "repository": "http://github.com/ModaOperandi/moda-themes",
   "author": "Team Moda",
@@ -16,21 +16,14 @@
   "scripts": {
     "build": "node scripts/export",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build",
-    "start": "cd example && yarn start",
-    "semantic-release": "semantic-release"
+    "deploy:local": "gh-pages -d example/build",
+    "deploy": "gh-pages --repo https://$GH_TOKEN@github.com/ModaOperandi/moda-themes.git -d example/build --silent",
+    "start": "cd example && yarn start"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "3.0.2",
     "gh-pages": "2.0.1",
     "node-sass": "^4.12.0",
-    "node-sass-export": "^0.0.3",
-    "semantic-release": "^15.13.19"
+    "node-sass-export": "^0.0.3"
   },
-  "dependencies": {},
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  }
+  "dependencies": {}
 }

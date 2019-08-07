@@ -125,6 +125,18 @@ Returns a color variable.
 
 Returns a font-family variable.
 
+#### `font-size($name)`
+
+Returns a font-size variable.
+
+#### `line-height($name)`
+
+Returns a line-height variable.
+
+#### `letter-spacing($name)`
+
+Returns a letter-spacing variable.
+
 #### `get-from-theme($theme-name, $keys...)`
 
 Undocumented.
@@ -146,6 +158,10 @@ Inlcudes the full set of themes under `[data-theme="name"]` selectors. (include 
 #### `theme-variables-for($theme)`
 
 Allows you to pull in a set of themed variables manually.
+
+#### `type-treatment($name, $important: false)`
+
+Pulls in a fixed configuration of styles for specific type treatments.
 
 ## Releasing
 
