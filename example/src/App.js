@@ -5,7 +5,6 @@ import modaThemes from "moda-themes";
 import { GlobalStyles } from "./components/GlobalStyles";
 import { NearestColor } from "./components/NearestColor";
 import { Palette } from "./components/Palette";
-import { TypeTreatment } from "./components/TypeTreatment";
 
 const { colors, themes } = modaThemes.data;
 
@@ -48,19 +47,6 @@ function App() {
         <GlobalStyles />
 
         <h1>moda-themes</h1>
-
-        <Section>
-          <h2>Type Treatments</h2>
-
-          <TypeTreatment name="secondary-title">Editor’s Note</TypeTreatment>
-
-          <TypeTreatment name="body-copy-sans">
-            A classic of collegiate design, Thom Browne's rugby shirt has a
-            collared neckline and thick stripes. Tailored in Japan from
-            breathable cotton, it can be tucked into tailored pants or worn with
-            jeans.
-          </TypeTreatment>
-        </Section>
 
         <Section>
           <NearestColor />

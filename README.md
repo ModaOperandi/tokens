@@ -161,10 +161,6 @@ Inlcudes the full set of themes under `[data-theme="name"]` selectors. (include 
 
 Allows you to pull in a set of themed variables manually.
 
-#### `type-treatment($name, $important: false)`
-
-Pulls in a fixed configuration of styles for specific type treatments.
-
 ## Releasing
 
 [Increment the versions](https://semver.org/) in [package.json](package.json) and [lib/moda-themes/version.rb](lib/moda-themes/version.rb).

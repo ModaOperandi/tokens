@@ -41,28 +41,9 @@ $font-sizes: (
   md: 13px
 );
 
-$type-treatments: (
-  secondary-title: (
-    font-family: font-family("sans"),
-    font-size: font-size("sm"),
-    letter-spacing: letter-spacing("md"),
-    line-height: line-height("base"),
-    text-transform: uppercase,
-    color: color("black")
-  ),
-  body-copy-sans: (
-    font-family: font-family("sans"),
-    font-size: font-size("md"),
-    letter-spacing: letter-spacing("sm"),
-    line-height: line-height("base"),
-    color: color("black")
-  )
-);
-
 $typography: (
   fonts: $fonts,
   line-heights: $line-heights,
   letter-spacing: $letter-spacing,
-  font-sizes: $font-sizes,
-  type-treatments: $type-treatments
+  font-sizes: $font-sizes
 );
