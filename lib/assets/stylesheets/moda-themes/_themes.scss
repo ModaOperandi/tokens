@@ -65,13 +65,3 @@
 @function font-size($key) {
   @return __fetch__($font-sizes, $key);
 }
-
-@mixin type-treatment($name, $important: false) {
-  @each $property, $value in __fetch__($type-treatments, $name) {
-    @if ($important) {
-      #{$property}: $value !important;
-    } @else {
-      #{$property}: $value;
-    }
-  }
-}
