@@ -175,6 +175,8 @@ Allows you to pull in a set of themed variables manually.
 
 Run `yarn build` to rebuild the exported data.
 
-Run `rake release` to release the Ruby gem.
+<strike>Run `rake release` to release the Ruby gem.</strike>
 
-Run `yarn publish` to publish the NPM package.
+<strike>Run `yarn publish` to publish the NPM package.</strike>
+
+[Create a new release](https://github.com/ModaOperandi/moda-themes/releases/new). Github Actions should publish it to RubyGems & NPM.
