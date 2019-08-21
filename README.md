@@ -139,6 +139,14 @@ Returns a line-height variable.
 
 Returns a letter-spacing variable.
 
+#### `space($index)`
+
+Returns a value from the spacing scale.
+
+#### `z-index($name)`
+
+Returns a z-index.
+
 #### `get-from-theme($theme-name, $keys...)`
 
 Undocumented.
