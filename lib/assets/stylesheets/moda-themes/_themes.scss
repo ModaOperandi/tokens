@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 @function __var__($var) {
   @return var(--#{$var});
@@ -39,17 +39,17 @@
 
 @function themed-value($category, $key) {
   @if themed-value-exists($category, $key) {
-    @return __var__("theme-#{$category}-#{$key}");
+    @return __var__('theme-#{$category}-#{$key}');
   }
 }
 
 @function font-family($key) {
-  @return themed-value("font-families", $key);
+  @return themed-value('font-families', $key);
 }
 
 @function color($key) {
-  @if themed-value-exists("colors", $key, $raise: false) {
-    @return themed-value("colors", $key);
+  @if themed-value-exists('colors', $key, $raise: false) {
+    @return themed-value('colors', $key);
   }
   @return __fetch__($colors-flat, $key);
 }
@@ -72,4 +72,10 @@
 
 @function z-index($key) {
   @return __fetch__($z-indexes, $key);
+}
+
+@mixin respond-to($key) {
+  @media (min-width: __fetch__($breakpoints, $key)) {
+    @content;
+  }
 }
