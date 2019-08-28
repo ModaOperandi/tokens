@@ -1,12 +1,13 @@
-import React from "react";
-import styled, { ThemeProvider } from "styled-components";
-import modaThemes from "moda-themes";
+import React from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+import modaThemes from 'moda-themes';
 
-import { GlobalStyles } from "./components/GlobalStyles";
-import { NearestColor } from "./components/NearestColor";
-import { Palette } from "./components/Palette";
-import { Scale } from "./components/Scale";
-import { ZIndexes } from "./components/ZIndexes";
+import { GlobalStyles } from './components/GlobalStyles';
+import { NearestColor } from './components/NearestColor';
+import { Palette } from './components/Palette';
+import { Scale } from './components/Scale';
+import { ZIndexes } from './components/ZIndexes';
+import { Breakpoints } from './components/Breakpoints';
 
 const { colors, themes, space } = modaThemes.data;
 
@@ -15,26 +16,26 @@ const PALETTES = {
     name: themeName,
     colors: Object.keys(themes[themeName].colors).map(colorName => ({
       name: colorName,
-      value: themes[themeName].colors[colorName]
-    }))
+      value: themes[themeName].colors[colorName],
+    })),
   })),
 
   global: Object.keys(colors).map(setName => ({
     name: setName,
     colors: Object.keys(colors[setName]).map(colorName => ({
       name: colorName,
-      value: colors[setName][colorName]
-    }))
-  }))
+      value: colors[setName][colorName],
+    })),
+  })),
 };
 
 const THEME = {
   ...themes.global,
   colors: {
     ...colors.global,
-    ...colors.greyscale
+    ...colors.greyscale,
   },
-  scale: space.scale
+  scale: space.scale,
 };
 
 const Section = styled.section`
@@ -54,6 +55,11 @@ function App() {
         <h1>moda-themes</h1>
 
         <NearestColor />
+
+        <Section>
+          <h2>Breakpoints</h2>
+          <Breakpoints />
+        </Section>
 
         <Section>
           <h2>Spacing Scale</h2>
