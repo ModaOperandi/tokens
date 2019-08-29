@@ -1,8 +1,43 @@
 @import '../lib/assets/stylesheets/moda-themes';
 
 // Exports out any SASS maps to a JSON files
-$__export__: export('data/themes.json', $themes);
-$__export__: export('data/colors.json', $colors);
-$__export__: export('data/typography.json', $typography);
-$__export__: export('data/space.json', $space);
-$__export__: export('data/breakpoints.json', $breakpoints);
+$__export__: export(
+  'data/themes.js',
+  $themes,
+  (
+    prefix: 'module.exports = ',
+    suffix: ';',
+  )
+);
+$__export__: export(
+  'data/colors.js',
+  $colors,
+  (
+    prefix: 'module.exports = ',
+    suffix: ';',
+  )
+);
+$__export__: export(
+  'data/typography.js',
+  $typography,
+  (
+    prefix: 'module.exports = ',
+    suffix: ';',
+  )
+);
+$__export__: export(
+  'data/space.js',
+  $space,
+  (
+    prefix: 'module.exports = ',
+    suffix: ';',
+  )
+);
+$__export__: export(
+  'data/breakpoints.js',
+  $breakpoints,
+  (
+    prefix: 'module.exports = ',
+    suffix: ';',
+  )
+);

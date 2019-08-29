@@ -1,4 +1,4 @@
-{
+module.exports = {
   "scale": [
     0,
     "0.125em",
@@ -18,4 +18,4 @@
     "primary-nav": 9998,
     "modal": 11000
   }
-}
+};
