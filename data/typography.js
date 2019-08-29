@@ -1,4 +1,4 @@
-{
+module.exports = {
   "fonts": {
     "legacy": {
       "title": [
@@ -73,4 +73,4 @@
     "sm": "12px",
     "md": "13px"
   }
-}
+};

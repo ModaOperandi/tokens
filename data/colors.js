@@ -1,4 +1,4 @@
-{
+module.exports = {
   "legacy": {
     "white": "rgb(255, 255, 255)",
     "black": "rgb(0, 0, 0)",
@@ -43,4 +43,4 @@
     "cashmere": "rgb(222, 222, 222)",
     "noise": "rgb(245, 245, 245)"
   }
-}
+};

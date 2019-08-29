@@ -1,4 +1,4 @@
-{
+module.exports = {
   "legacy": {
     "font-families": {
       "title": [
@@ -78,4 +78,4 @@
       "transition-error-red-to-fuchsia": "rgb(196, 76, 176)"
     }
   }
-}
+};
