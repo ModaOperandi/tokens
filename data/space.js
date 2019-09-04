@@ -16,6 +16,6 @@ module.exports = {
   ],
   "z-indexes": {
     "primary-nav": 9998,
-    "modal": 11000
+    "modal": 1000100
   }
 };
