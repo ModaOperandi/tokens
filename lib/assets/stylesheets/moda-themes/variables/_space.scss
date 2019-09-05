@@ -3,17 +3,17 @@ $scale: 0, 0.125em, 0.25em, 0.5em, 0.75em, 1em, 1.5em, 2em, 3em, 4em, 6em, 8em,
 
 // Imported z-index values
 $legacy-z-indexes: (
-  primary-nav: 9998
+  primary-nav: 9998,
 );
 
 $z-indexes: map-merge(
   $legacy-z-indexes,
   (
-    modal: 11000
+    modal: 1000100,
   )
 );
 
 $space: (
   scale: $scale,
-  z-indexes: $z-indexes
+  z-indexes: $z-indexes,
 );
