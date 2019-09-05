@@ -17,8 +17,15 @@ action "yarn install" {
   args = "install"
 }
 
-action "Publish NPM package" {
+action "yarn build" {
   needs = "yarn install"
+  uses = "docker://node:10"
+  runs = "yarn"
+  args = "build"
+}
+
+action "Publish NPM package" {
+  needs = "yarn build"
   uses = "actions/npm@master"
   args = "publish --access public"
   secrets = ["NPM_AUTH_TOKEN"]
