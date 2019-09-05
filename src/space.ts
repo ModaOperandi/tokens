@@ -1,4 +1,5 @@
-module.exports = {
+// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
+export const space = {
   "scale": [
     0,
     "0.125em",

@@ -1,4 +1,5 @@
-module.exports = {
+// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
+export const colors = {
   "legacy": {
     "white": "rgb(255, 255, 255)",
     "black": "rgb(0, 0, 0)",

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import modaThemes from 'moda-themes';
+import { colors, themes, space } from 'moda-themes';
 
 import { GlobalStyles } from './components/GlobalStyles';
 import { NearestColor } from './components/NearestColor';
@@ -8,8 +8,6 @@ import { Palette } from './components/Palette';
 import { Scale } from './components/Scale';
 import { ZIndexes } from './components/ZIndexes';
 import { Breakpoints } from './components/Breakpoints';
-
-const { colors, themes, space } = modaThemes.data;
 
 const PALETTES = {
   themed: Object.keys(themes).map(themeName => ({

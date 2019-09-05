@@ -1,10 +1,6 @@
 import React from 'react';
-import modaThemes from 'moda-themes';
+import { breakpoints } from 'moda-themes';
 import styled from 'styled-components';
-
-const {
-  data: { breakpoints },
-} = modaThemes;
 
 const Container = styled.div`
   position: relative;

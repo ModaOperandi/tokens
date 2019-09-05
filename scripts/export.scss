@@ -1,43 +1,50 @@
 @import '../lib/assets/stylesheets/moda-themes';
 
-// Exports out any SASS maps to a JSON files
+// Exports out any SASS maps to a TypeScript files
 $__export__: export(
-  'data/themes.js',
+  'src/themes.ts',
   $themes,
   (
-    prefix: 'module.exports = ',
+    prefix: '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
+export const themes = ',
     suffix: ';',
   )
 );
 $__export__: export(
-  'data/colors.js',
+  'src/colors.ts',
   $colors,
   (
-    prefix: 'module.exports = ',
+    prefix: '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
+export const colors = ',
     suffix: ';',
   )
 );
 $__export__: export(
-  'data/typography.js',
+  'src/typography.ts',
   $typography,
   (
-    prefix: 'module.exports = ',
+    prefix:
+      '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
+export const typography = ',
     suffix: ';',
   )
 );
 $__export__: export(
-  'data/space.js',
+  'src/space.ts',
   $space,
   (
-    prefix: 'module.exports = ',
+    prefix: '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
+export const space = ',
     suffix: ';',
   )
 );
 $__export__: export(
-  'data/breakpoints.js',
+  'src/breakpoints.ts',
   $breakpoints,
   (
-    prefix: 'module.exports = ',
+    prefix:
+      '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
+export const breakpoints = ',
     suffix: ';',
   )
 );
