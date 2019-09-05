@@ -1,12 +1,8 @@
-import React from "react";
-import modaThemes from "moda-themes";
-import styled from "styled-components";
+import React from 'react';
+import { space } from 'moda-themes';
+import styled from 'styled-components';
 
-const {
-  data: {
-    space: { "z-indexes": zs }
-  }
-} = modaThemes;
+const { 'z-indexes': zs } = space;
 
 const Container = styled.div``;
 

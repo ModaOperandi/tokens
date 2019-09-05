@@ -1,17 +1,11 @@
-import React from "react";
-import modaThemes from "moda-themes";
-import styled from "styled-components";
-
-const {
-  data: {
-    space: { scale }
-  }
-} = modaThemes;
+import React from 'react';
+import { space } from 'moda-themes';
+import styled from 'styled-components';
 
 const Container = styled.div`
   padding: 1em;
-  color: ${props => props.theme.colors["klein-blue"]};
-  background-color: ${props => props.theme.colors["lilac"]};
+  color: ${props => props.theme.colors['klein-blue']};
+  background-color: ${props => props.theme.colors['lilac']};
 `;
 
 const Unit = styled.div`
@@ -25,7 +19,7 @@ const Measure = styled.div`
   position: relative;
   width: ${props => props.theme.scale[12]};
   height: ${props => props.size};
-  background-color: ${props => props.theme.colors["klein-blue"]};
+  background-color: ${props => props.theme.colors['klein-blue']};
 
   &:before {
     left: 100%;
@@ -50,7 +44,7 @@ const Value = styled.div`
 export const Scale = () => {
   return (
     <Container>
-      {scale.map((size, i) => (
+      {space.scale.map((size, i) => (
         <Unit key={size}>
           <Label>
             space({i}) = {size}

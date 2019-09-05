@@ -1,10 +1,8 @@
-import chroma from "chroma-js";
-import nearestColor from "nearest-color";
-import modaThemes from "moda-themes";
+import chroma from 'chroma-js';
+import nearestColor from 'nearest-color';
+import { colors } from 'moda-themes';
 
-import { toHexObj } from "./toHexObj";
-
-const { colors } = modaThemes.data;
+import { toHexObj } from './toHexObj';
 
 const greyChoices = toHexObj(Object.entries(colors.greyscale));
 const colorChoices = toHexObj(Object.entries(colors.global));
