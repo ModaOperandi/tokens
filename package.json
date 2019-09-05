@@ -6,24 +6,28 @@
   "author": "Team Moda",
   "license": "MIT",
   "private": false,
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "style": "lib/assets/stylesheets/_moda-themes.scss",
   "files": [
-    "./index.js",
+    "./index.ts",
     "/lib/assets",
     "/data"
   ],
   "scripts": {
-    "build": "node scripts/export",
+    "clean": "rm -rf ./dist",
+    "export": "tsc scripts/export.ts && node scripts/export.js",
+    "build": "yarn clean && yarn export && yarn tsc",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy:local": "gh-pages -d example/build",
     "deploy": "gh-pages --repo https://$GH_TOKEN@github.com/ModaOperandi/moda-themes.git -d example/build --silent",
     "start": "cd example && yarn start"
   },
   "devDependencies": {
+    "@types/node": "^12.7.4",
     "gh-pages": "2.0.1",
     "node-sass": "^4.12.0",
-    "node-sass-export": "^0.0.3"
-  },
-  "dependencies": {}
+    "node-sass-export": "^0.0.3",
+    "typescript": "^3.6.2"
+  }
 }
