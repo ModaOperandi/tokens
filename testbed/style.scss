@@ -1,0 +1,9 @@
+@import 'moda-themes';
+
+@include global-styles;
+@include set-root-theme('global');
+
+body {
+  background-color: color('canary');
+  margin: space(5);
+}
