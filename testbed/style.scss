@@ -4,6 +4,6 @@
 @include set-root-theme('global');
 
 body {
-  background-color: color('canary');
+  background-color: color('canary', 0.9);
   margin: space(5);
 }

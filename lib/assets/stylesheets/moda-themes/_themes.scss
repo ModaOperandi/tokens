@@ -47,11 +47,20 @@
   @return themed-value('font-families', $key);
 }
 
-@function color($key) {
+@function color($key, $opacity: null) {
   @if themed-value-exists('colors', $key, $raise: false) {
-    @return themed-value('colors', $key);
+    @if $opacity {
+      @return rgba(themed-value('colors', $key), $opacity);
+    } @else {
+      @return themed-value('colors', $key);
+    }
   }
-  @return __fetch__($colors-flat, $key);
+
+  @if $opacity {
+    @return rgba(__fetch__($colors-flat, $key), $opacity);
+  } @else {
+    @return __fetch__($colors-flat, $key);
+  }
 }
 
 @function letter-spacing($key) {
