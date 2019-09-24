@@ -71,6 +71,7 @@ export const typography = {
     "wider": "0.1em"
   },
   "font-sizes": {
+    "xs": "10px",
     "sm": "12px",
     "md": "13px"
   }
