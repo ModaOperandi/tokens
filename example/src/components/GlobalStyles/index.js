@@ -11,6 +11,10 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
 
+  :focus {
+    outline: none;
+  }
+
   body {
     margin: 3em;
     padding: 3em;
