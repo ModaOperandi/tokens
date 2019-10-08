@@ -212,4 +212,4 @@ Run `yarn build` to rebuild the exported data.
 
 <strike>Run `yarn publish` to publish the NPM package.</strike>
 
-[Create a new release](https://github.com/ModaOperandi/moda-themes/releases/new). Github Actions should publish it to RubyGems & NPM.
+[Create a new release](https://github.com/ModaOperandi/moda-themes/releases/new).
