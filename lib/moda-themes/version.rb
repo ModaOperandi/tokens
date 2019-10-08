@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module ModaThemes
-  VERSION = "4.4.2"
+  VERSION = "5.0.0"
 end
