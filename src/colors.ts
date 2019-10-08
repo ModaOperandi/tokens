@@ -1,16 +1,5 @@
 // THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
 export const colors = {
-  "legacy": {
-    "white": "rgb(255, 255, 255)",
-    "black": "rgb(0, 0, 0)",
-    "legacy-burgundy-nav": "rgb(115, 79, 89)",
-    "legacy-burgundy-red": "rgb(60, 19, 21)",
-    "legacy-red": "rgb(91, 26, 40)",
-    "legacy-pink": "rgb(244, 230, 230)",
-    "legacy-gold": "rgb(155, 136, 95)",
-    "legacy-error-red": "rgb(246, 43, 15)",
-    "legacy-blue": "rgb(89, 154, 211)"
-  },
   "global": {
     "white": "rgb(255, 255, 255)",
     "black": "rgb(0, 0, 0)",

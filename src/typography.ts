@@ -1,36 +1,6 @@
 // THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
 export const typography = {
   "fonts": {
-    "legacy": {
-      "title": [
-        "Miller Headline",
-        "Georgia",
-        "Times New Roman",
-        "Times",
-        "serif"
-      ],
-      "sans": [
-        "Gotham",
-        "Helvetica Neue",
-        "Helvetica",
-        "Arial",
-        "sans-serif"
-      ],
-      "serif": [
-        "Miller Headline",
-        "Georgia",
-        "Times New Roman",
-        "Times",
-        "serif"
-      ],
-      "body": [
-        "Miller Headline",
-        "Georgia",
-        "Times New Roman",
-        "Times",
-        "serif"
-      ]
-    },
     "global": {
       "title": [
         "Moda Operandi Serif",

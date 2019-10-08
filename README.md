@@ -24,30 +24,63 @@ bundle install
 Use the functions + mixins in your SASS/SCSS files:
 
 ```scss
-@import "moda-themes";
+@import 'moda-themes';
 
 // Include this once to generate the `data-theme` attr styling. This is not auto-included
 // to prevent duplicate imports.
 @include data-themes; /* Outputs =>
-[data-theme=legacy] {
-  --theme-font-families-title: Miller Headline, Georgia, Times New Roman, Times, serif;
-  --theme-font-families-sans: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --theme-font-families-serif: Miller Headline, Georgia, Times New Roman, Times, serif;
-  --theme-font-families-body: Miller Headline, Georgia, Times New Roman, Times, serif;
-  // ...
-}
-[data-theme=global] {
+[data-theme="global"] {
   --theme-font-families-title: Moda Operandi Serif, Times New Roman, Times, serif;
   --theme-font-families-sans: Moda Operandi Sans, Arial, sans-serif;
   --theme-font-families-serif: Moda Operandi Serif, Times New Roman, Times, serif;
   --theme-font-families-body: Caslon, Times New Roman, Times, serif;
-  // ...
-}
+  --theme-colors-primary: #263078;
+  --theme-colors-primary-alt: #933a20;
+  --theme-colors-secondary: #ba912e;
+  --theme-colors-background: #b1bfaa;
+  --theme-colors-background-alt: #f8f5ee;
+  --theme-colors-accent: #ff9279; }
+
+[data-theme="mens"] {
+  --theme-font-families-title: Moda Operandi Serif, Times New Roman, Times, serif;
+  --theme-font-families-sans: Moda Operandi Sans, Arial, sans-serif;
+  --theme-font-families-serif: Moda Operandi Serif, Times New Roman, Times, serif;
+  --theme-font-families-body: Caslon, Times New Roman, Times, serif;
+  --theme-colors-primary: #7f9acf;
+  --theme-colors-primary-alt: #68683b;
+  --theme-colors-secondary: #f3ded9;
+  --theme-colors-background: #f2f3f5;
+  --theme-colors-background-alt: #f2f3f5;
+  --theme-colors-accent: #f0f659; }
+
+[data-theme="womens"] {
+  --theme-font-families-title: Moda Operandi Serif, Times New Roman, Times, serif;
+  --theme-font-families-sans: Moda Operandi Sans, Arial, sans-serif;
+  --theme-font-families-serif: Moda Operandi Serif, Times New Roman, Times, serif;
+  --theme-font-families-body: Caslon, Times New Roman, Times, serif;
+  --theme-colors-primary: #d56b27;
+  --theme-colors-primary-alt: #d7b3d0;
+  --theme-colors-secondary: #003728;
+  --theme-colors-background: #f8f5ee;
+  --theme-colors-background-alt: #f8f5ee;
+  --theme-colors-accent: #c44cb0; }
+
+:root {
+  --theme-font-families-title: Moda Operandi Serif, Times New Roman, Times, serif;
+  --theme-font-families-sans: Moda Operandi Sans, Arial, sans-serif;
+  --theme-font-families-serif: Moda Operandi Serif, Times New Roman, Times, serif;
+  --theme-font-families-body: Caslon, Times New Roman, Times, serif;
+  --theme-colors-primary: #263078;
+  --theme-colors-primary-alt: #933a20;
+  --theme-colors-secondary: #ba912e;
+  --theme-colors-background: #b1bfaa;
+  --theme-colors-background-alt: #f8f5ee;
+  --theme-colors-accent: #ff9279; }
 */
 
 // Use the functions to access themed values:
 p {
-  font-family: font-family("sans");
+  font-family: font-family('sans');
   // font-family: var(--theme-font-families-sans);
 }
 ```
@@ -65,17 +98,17 @@ Configure node-sass `includePaths`:
 For Parcel: Create a .sassrc.js:
 
 ```javascript
-const modaThemes = require("moda-themes");
+const modaThemes = require('moda-themes');
 
 module.exports = {
-  includePaths: [...modaThemes.includePaths]
+  includePaths: [...modaThemes.includePaths],
 };
 ```
 
 For Webpack: Configure sass-loader:
 
 ```javascript
-const modaThemes = require("moda-themes");
+const modaThemes = require('moda-themes');
 
 const config = {
   // ...
@@ -84,16 +117,16 @@ const config = {
       {
         test: /\.scss$/,
         use: [
-          "style-loader",
-          "css-loader",
+          'style-loader',
+          'css-loader',
           {
-            loader: "sass-loader",
-            options: { includePaths: [...modaThemes.includePaths] }
-          }
-        ]
-      }
-    ]
-  }
+            loader: 'sass-loader',
+            options: { includePaths: [...modaThemes.includePaths] },
+          },
+        ],
+      },
+    ],
+  },
 };
 
 module.exports = config;
@@ -102,7 +135,7 @@ module.exports = config;
 Use the functions + mixins in your SASS/SCSS files:
 
 ```scss
-@import "moda-themes/all";
+@import 'moda-themes/all';
 
 // ...
 ```
@@ -110,10 +143,6 @@ Use the functions + mixins in your SASS/SCSS files:
 ## Usage
 
 See [USAGE](USAGE.md).
-
-## Transitioning
-
-See [REBRAND](REBRAND.md).
 
 ## API
 

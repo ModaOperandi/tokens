@@ -1,6 +1,7 @@
 @import 'moda-themes';
 
 @include global-styles;
+@include data-themes;
 @include set-root-theme('global');
 
 body {
