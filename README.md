@@ -192,7 +192,7 @@ Sets theme variables at the `:root` (include this once)
 
 #### `data-themes()`
 
-Inlcudes the full set of themes under `[data-theme="name"]` selectors. (include this once)
+Includes the full set of themes under `[data-theme="name"]` selectors. (include this once)
 
 #### `theme-variables-for($theme)`
 
