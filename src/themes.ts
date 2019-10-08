@@ -1,47 +1,5 @@
 // THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
 export const themes = {
-  "legacy": {
-    "font-families": {
-      "title": [
-        "Miller Headline",
-        "Georgia",
-        "Times New Roman",
-        "Times",
-        "serif"
-      ],
-      "sans": [
-        "Gotham",
-        "Helvetica Neue",
-        "Helvetica",
-        "Arial",
-        "sans-serif"
-      ],
-      "serif": [
-        "Miller Headline",
-        "Georgia",
-        "Times New Roman",
-        "Times",
-        "serif"
-      ],
-      "body": [
-        "Miller Headline",
-        "Georgia",
-        "Times New Roman",
-        "Times",
-        "serif"
-      ]
-    },
-    "colors": {
-      "transition-gold-to-black": "rgb(155, 136, 95)",
-      "transition-gold-to-burnt-orange": "rgb(155, 136, 95)",
-      "transition-burgundy-nav-to-black": "rgb(115, 79, 89)",
-      "transition-burgundy-red-to-black": "rgb(60, 19, 21)",
-      "transition-burgundy-red-to-burnt-orange": "rgb(60, 19, 21)",
-      "transition-red-to-black": "rgb(91, 26, 40)",
-      "transition-blue-to-burnt-orange": "rgb(89, 154, 211)",
-      "transition-error-red-to-fuchsia": "rgb(246, 43, 15)"
-    }
-  },
   "global": {
     "font-families": {
       "title": [
@@ -69,14 +27,82 @@ export const themes = {
       ]
     },
     "colors": {
-      "transition-gold-to-black": "rgb(0, 0, 0)",
-      "transition-gold-to-burnt-orange": "rgb(213, 107, 39)",
-      "transition-burgundy-nav-to-black": "rgb(0, 0, 0)",
-      "transition-burgundy-red-to-black": "rgb(0, 0, 0)",
-      "transition-burgundy-red-to-burnt-orange": "rgb(213, 107, 39)",
-      "transition-red-to-black": "rgb(0, 0, 0)",
-      "transition-blue-to-burnt-orange": "rgb(213, 107, 39)",
-      "transition-error-red-to-fuchsia": "rgb(196, 76, 176)"
+      "primary": "rgb(38, 48, 120)",
+      "primary-alt": "rgb(147, 58, 32)",
+      "secondary": "rgb(186, 145, 46)",
+      "background": "rgb(177, 191, 170)",
+      "background-alt": "rgb(248, 245, 238)",
+      "accent": "rgb(255, 146, 121)"
+    }
+  },
+  "mens": {
+    "font-families": {
+      "title": [
+        "Moda Operandi Serif",
+        "Times New Roman",
+        "Times",
+        "serif"
+      ],
+      "sans": [
+        "Moda Operandi Sans",
+        "Arial",
+        "sans-serif"
+      ],
+      "serif": [
+        "Moda Operandi Serif",
+        "Times New Roman",
+        "Times",
+        "serif"
+      ],
+      "body": [
+        "Caslon",
+        "Times New Roman",
+        "Times",
+        "serif"
+      ]
+    },
+    "colors": {
+      "primary": "rgb(127, 154, 207)",
+      "primary-alt": "rgb(104, 104, 59)",
+      "secondary": "rgb(243, 222, 217)",
+      "background": "rgb(242, 243, 245)",
+      "background-alt": "rgb(242, 243, 245)",
+      "accent": "rgb(240, 246, 89)"
+    }
+  },
+  "womens": {
+    "font-families": {
+      "title": [
+        "Moda Operandi Serif",
+        "Times New Roman",
+        "Times",
+        "serif"
+      ],
+      "sans": [
+        "Moda Operandi Sans",
+        "Arial",
+        "sans-serif"
+      ],
+      "serif": [
+        "Moda Operandi Serif",
+        "Times New Roman",
+        "Times",
+        "serif"
+      ],
+      "body": [
+        "Caslon",
+        "Times New Roman",
+        "Times",
+        "serif"
+      ]
+    },
+    "colors": {
+      "primary": "rgb(213, 107, 39)",
+      "primary-alt": "rgb(215, 179, 208)",
+      "secondary": "rgb(0, 55, 40)",
+      "background": "rgb(248, 245, 238)",
+      "background-alt": "rgb(248, 245, 238)",
+      "accent": "rgb(196, 76, 176)"
     }
   }
 };

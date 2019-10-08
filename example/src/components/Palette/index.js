@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { Swatch } from "../Swatch";
+import { Swatch } from '../Swatch';
 
 const Container = styled.div`
   margin: 3em auto;
@@ -44,7 +44,7 @@ export const Palette = ({ name, colors, isThemed, ...rest }) => {
     <Container {...rest}>
       <h3>{name}</h3>
 
-      <Colors isDeprecated={name === "legacy"}>
+      <Colors>
         {colors.map(color => (
           <Swatch key={color.name} isFullWidth={isThemed} {...color} />
         ))}

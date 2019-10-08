@@ -6,13 +6,10 @@ import { toHexObj } from './toHexObj';
 
 const greyChoices = toHexObj(Object.entries(colors.greyscale));
 const colorChoices = toHexObj(Object.entries(colors.global));
-const legacyChoices = toHexObj(Object.entries(colors.legacy));
 
 export const findNearestColor = nearestColor.from(colorChoices);
 
 export const findNearestGrey = nearestColor.from(greyChoices);
-
-export const findNearestLegacy = nearestColor.from(legacyChoices);
 
 export const findNearestColorOrGrey = input => {
   const color = chroma(input);
