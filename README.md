@@ -208,8 +208,8 @@ Pulls in any global styles.
 
 Run `yarn build` to rebuild the exported data.
 
-<strike>Run `rake release` to release the Ruby gem.</strike>
+Run `rake release` to release the Ruby gem.
 
-<strike>Run `yarn publish` to publish the NPM package.</strike>
+Run `yarn publish` to publish the NPM package.
 
 [Create a new release](https://github.com/ModaOperandi/moda-themes/releases/new).
