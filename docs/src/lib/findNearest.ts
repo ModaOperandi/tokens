@@ -5,7 +5,12 @@ import { colors } from "@moda/tokens";
 import { toHexObj } from "./toHexObj";
 
 const greyChoices = toHexObj(Object.entries(colors.greyscale));
-const colorChoices = toHexObj(Object.entries(colors.global));
+const colorChoices = toHexObj([
+  ...Object.entries(colors.ui),
+  ...Object.entries(colors.global),
+  ...Object.entries(colors.mens),
+  ...Object.entries(colors.womens)
+]);
 
 export const findNearestColor = nearestColor.from(colorChoices);
 export const findNearestGrey = nearestColor.from(greyChoices);
