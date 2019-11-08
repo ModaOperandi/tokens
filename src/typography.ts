@@ -11,18 +11,6 @@ export const typography = {
       "Times New Roman",
       "Times",
       "serif"
-    ],
-    "title": [
-      "Moda Operandi Serif",
-      "Times New Roman",
-      "Times",
-      "serif"
-    ],
-    "body": [
-      "Caslon",
-      "Times New Roman",
-      "Times",
-      "serif"
     ]
   },
   "line-heights": [

@@ -17,9 +17,7 @@
     "clean": "rm -rf ./dist",
     "export": "tsc scripts/export.ts && node scripts/export.js",
     "build": "yarn clean && yarn export && yarn tsc",
-    "predeploy": "cd docs && yarn install && yarn run build",
-    "deploy:local": "gh-pages -d docs/build",
-    "deploy": "gh-pages --repo https://$GH_TOKEN@github.com/ModaOperandi/tokens.git -d docs/build --silent",
+    "predeploy": "yarn build && cd docs && yarn install && yarn run build",
     "start": "cd docs && yarn start"
   },
   "devDependencies": {

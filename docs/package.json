@@ -2,7 +2,6 @@
   "name": "@moda/tokens-docs",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://modaoperandi.github.io/tokens",
   "dependencies": {
     "@moda/tokens": "link:..",
     "@types/chroma-js": "^1.4.3",
