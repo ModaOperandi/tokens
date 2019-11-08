@@ -5,7 +5,7 @@
 ## Meta
 
 - **State**: development
-- **Point people**: [@dzucconi](https://github.com/dzucconi)
+- **Point people**: [@dzucconi](https://github.com/dzucconi), [@SamJacobs](https://github.com/SamJacobs)
 
 ## Getting started
 
