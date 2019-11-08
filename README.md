@@ -1,6 +1,6 @@
 # @moda/tokens
 
-[![CircleCI](https://img.shields.io/circleci/build/github/ModaOperandi/@moda/tokens)](https://circleci.com/gh/ModaOperandi/@moda/tokens) [![npm](https://img.shields.io/npm/v/@moda/tokens)](https://www.npmjs.com/package/@moda/tokens)
+[![CircleCI](https://img.shields.io/circleci/build/github/ModaOperandi/tokens)](https://circleci.com/gh/ModaOperandi/tokens) [![npm](https://img.shields.io/npm/v/@moda/tokens)](https://www.npmjs.com/package/@moda/tokens)
 
 ## Meta
 
