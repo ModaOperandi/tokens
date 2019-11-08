@@ -14,11 +14,11 @@
   }
 }
 
-@function letter-spacing($key) {
+@function letter-spacing($index) {
   @return __access__(map-get($typography, "letter-spacing"), $index);
 }
 
-@function line-height($key) {
+@function line-height($index) {
   @return __access__(map-get($typography, "line-heights"), $index);
 }
 
