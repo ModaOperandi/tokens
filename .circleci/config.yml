@@ -8,12 +8,6 @@ jobs:
       - image: "circleci/node:latest"
     steps:
       - checkout
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # Fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
       - run:
           name: install
           command: yarn install
@@ -21,5 +15,5 @@ jobs:
           name: build
           command: yarn build
       - run:
-          name: docs
-          command: yarn deploy
+          name: release
+          command: yarn semantic-release || true
