@@ -2,7 +2,7 @@
   "name": "@moda/tokens",
   "version": "0.0.0-development",
   "description": "Constant values for modaoperandi.com",
-  "repository": "http://github.com/ModaOperandi/tokens",
+  "repository": "git@github.com:ModaOperandi/tokens.git",
   "author": "Moda Operandi",
   "license": "MIT",
   "private": false,
