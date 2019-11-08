@@ -1,215 +1,28 @@
-# moda-themes
+# @moda/tokens
 
-[![CircleCI](https://img.shields.io/circleci/build/github/ModaOperandi/moda-themes?token=51b1595bd3dac6aa321b052adfc4595cc79910d6)](https://circleci.com/gh/ModaOperandi/moda-themes) [![npm](https://img.shields.io/npm/v/moda-themes)](https://www.npmjs.com/package/moda-themes) [![Gem](https://img.shields.io/gem/v/moda-themes)](https://rubygems.org/gems/moda-themes)
+[![CircleCI](https://img.shields.io/circleci/build/github/ModaOperandi/@moda/tokens?token=51b1595bd3dac6aa321b052adfc4595cc79910d6)](https://circleci.com/gh/ModaOperandi/@moda/tokens) [![npm](https://img.shields.io/npm/v/@moda/tokens)](https://www.npmjs.com/package/@moda/tokens) [![Gem](https://img.shields.io/gem/v/@moda/tokens)](https://rubygems.org/gems/@moda/tokens)
 
 ## Meta
 
-- **State**: production
+- **State**: development
 - **Point people**: [@dzucconi](https://github.com/dzucconi)
 
 ## Getting started
 
-### Ruby
-
-Include the Ruby gem:
-
-```ruby
-gem 'moda-themes'
-```
-
-```sh
-bundle install
-```
-
-Use the functions + mixins in your SASS/SCSS files:
-
-```scss
-@import 'moda-themes';
-
-// Include this once to generate the `data-theme` attr styling. This is not auto-included
-// to prevent duplicate imports.
-@include data-themes; /* Outputs =>
-[data-theme="global"] {
-  --theme-font-families-title: Moda Operandi Serif, Times New Roman, Times, serif;
-  --theme-font-families-sans: Moda Operandi Sans, Arial, sans-serif;
-  --theme-font-families-serif: Moda Operandi Serif, Times New Roman, Times, serif;
-  --theme-font-families-body: Caslon, Times New Roman, Times, serif;
-  --theme-colors-primary: #263078;
-  --theme-colors-primary-alt: #933a20;
-  --theme-colors-secondary: #ba912e;
-  --theme-colors-background: #b1bfaa;
-  --theme-colors-background-alt: #f8f5ee;
-  --theme-colors-accent: #ff9279; }
-
-[data-theme="mens"] {
-  --theme-font-families-title: Moda Operandi Serif, Times New Roman, Times, serif;
-  --theme-font-families-sans: Moda Operandi Sans, Arial, sans-serif;
-  --theme-font-families-serif: Moda Operandi Serif, Times New Roman, Times, serif;
-  --theme-font-families-body: Caslon, Times New Roman, Times, serif;
-  --theme-colors-primary: #7f9acf;
-  --theme-colors-primary-alt: #68683b;
-  --theme-colors-secondary: #f3ded9;
-  --theme-colors-background: #f2f3f5;
-  --theme-colors-background-alt: #f2f3f5;
-  --theme-colors-accent: #f0f659; }
-
-[data-theme="womens"] {
-  --theme-font-families-title: Moda Operandi Serif, Times New Roman, Times, serif;
-  --theme-font-families-sans: Moda Operandi Sans, Arial, sans-serif;
-  --theme-font-families-serif: Moda Operandi Serif, Times New Roman, Times, serif;
-  --theme-font-families-body: Caslon, Times New Roman, Times, serif;
-  --theme-colors-primary: #d56b27;
-  --theme-colors-primary-alt: #d7b3d0;
-  --theme-colors-secondary: #003728;
-  --theme-colors-background: #f8f5ee;
-  --theme-colors-background-alt: #f8f5ee;
-  --theme-colors-accent: #c44cb0; }
-
-:root {
-  --theme-font-families-title: Moda Operandi Serif, Times New Roman, Times, serif;
-  --theme-font-families-sans: Moda Operandi Sans, Arial, sans-serif;
-  --theme-font-families-serif: Moda Operandi Serif, Times New Roman, Times, serif;
-  --theme-font-families-body: Caslon, Times New Roman, Times, serif;
-  --theme-colors-primary: #263078;
-  --theme-colors-primary-alt: #933a20;
-  --theme-colors-secondary: #ba912e;
-  --theme-colors-background: #b1bfaa;
-  --theme-colors-background-alt: #f8f5ee;
-  --theme-colors-accent: #ff9279; }
-*/
-
-// Use the functions to access themed values:
-p {
-  font-family: font-family('sans');
-  // font-family: var(--theme-font-families-sans);
-}
-```
-
-### JavaScript
-
 Install the package:
 
 ```sh
-yarn add moda-themes
-```
-
-Configure node-sass `includePaths`:
-
-For Parcel: Create a .sassrc.js:
-
-```javascript
-const modaThemes = require('moda-themes');
-
-module.exports = {
-  includePaths: [...modaThemes.includePaths],
-};
-```
-
-For Webpack: Configure sass-loader:
-
-```javascript
-const modaThemes = require('moda-themes');
-
-const config = {
-  // ...
-  module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          {
-            loader: 'sass-loader',
-            options: { includePaths: [...modaThemes.includePaths] },
-          },
-        ],
-      },
-    ],
-  },
-};
-
-module.exports = config;
+yarn add @moda/tokens --dev
 ```
 
 Use the functions + mixins in your SASS/SCSS files:
 
 ```scss
-@import 'moda-themes/all';
+@import "~@moda/tokens";
 
-// ...
+// Use functions to access values:
+p {
+  font-family: font-family("sans");
+  // font-family: "Moda Operandi Sans", Arial, sans-serif;
+}
 ```
-
-## Usage
-
-See [USAGE](USAGE.md).
-
-## API
-
-### Functions
-
-#### `color($name)`
-
-Returns a color variable.
-
-#### `font-family($name)`
-
-Returns a font-family variable.
-
-#### `font-size($name)`
-
-Returns a font-size variable.
-
-#### `line-height($name)`
-
-Returns a line-height variable.
-
-#### `letter-spacing($name)`
-
-Returns a letter-spacing variable.
-
-#### `space($index)`
-
-Returns a value from the spacing scale.
-
-#### `z-index($name)`
-
-Returns a z-index.
-
-#### `get-from-theme($theme-name, $keys...)`
-
-Undocumented.
-
-#### `themed-value-exists($category, $key)`
-
-Undocumented.
-
-### Mixins
-
-#### `set-root-theme($theme-name)`
-
-Sets theme variables at the `:root` (include this once)
-
-#### `data-themes()`
-
-Includes the full set of themes under `[data-theme="name"]` selectors. (include this once)
-
-#### `theme-variables-for($theme)`
-
-Allows you to pull in a set of themed variables manually.
-
-#### `global-styles()`
-
-Pulls in any global styles.
-
-## Releasing
-
-[Increment the versions](https://semver.org/) in [package.json](package.json) and [lib/moda-themes/version.rb](lib/moda-themes/version.rb).
-
-Run `yarn build` to rebuild the exported data.
-
-Run `rake release` to release the Ruby gem.
-
-Run `yarn publish` to publish the NPM package.
-
-[Create a new release](https://github.com/ModaOperandi/moda-themes/releases/new).

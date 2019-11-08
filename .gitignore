@@ -3,8 +3,6 @@
 .cache/
 dist/
 node_modules/
-examples/
-moda-themes*.gem
 yarn-error.log
 includePaths.js
 scripts/export.js

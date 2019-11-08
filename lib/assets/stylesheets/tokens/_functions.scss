@@ -1,0 +1,31 @@
+@import "utilities";
+@import "variables";
+
+@function font-family($key) {
+  @return __fetch__(map-get($typography, "fonts"), $key);
+}
+
+@function color($key, $opacity: null) {
+  $value: __fetch__(map-get($colors, "all"), $key);
+  @if $opacity {
+    @return rgba($value, $opacity);
+  } @else {
+    @return $value;
+  }
+}
+
+@function letter-spacing($key) {
+  @return __access__(map-get($typography, "letter-spacing"), $index);
+}
+
+@function line-height($key) {
+  @return __access__(map-get($typography, "line-heights"), $index);
+}
+
+@function font-size($index) {
+  @return __access__(map-get($typography, "font-scale"), $index);
+}
+
+@function space($index) {
+  @return __access__(map-get($space, "scale"), $index);
+}

@@ -1,50 +1,41 @@
-@import '../lib/assets/stylesheets/moda-themes';
+@import "../lib/assets/stylesheets/tokens";
 
 // Exports out any SASS maps to a TypeScript files
 $__export__: export(
-  'src/themes.ts',
-  $themes,
-  (
-    prefix: '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
-export const themes = ',
-    suffix: ';',
-  )
-);
-$__export__: export(
-  'src/colors.ts',
+  "src/colors.ts",
   $colors,
   (
-    prefix: '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
-export const colors = ',
-    suffix: ';',
+    prefix: "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
+export const colors = ",
+    suffix: ";"
   )
 );
 $__export__: export(
-  'src/typography.ts',
+  "src/typography.ts",
   $typography,
   (
     prefix:
-      '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
-export const typography = ',
-    suffix: ';',
+      "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
+export const typography = ",
+    suffix: ";"
   )
 );
 $__export__: export(
-  'src/space.ts',
+  "src/space.ts",
   $space,
   (
-    prefix: '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
-export const space = ',
-    suffix: ';',
+    prefix: "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
+export const space = ",
+    suffix: ";"
   )
 );
 $__export__: export(
-  'src/breakpoints.ts',
+  "src/breakpoints.ts",
   $breakpoints,
   (
     prefix:
-      '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
-export const breakpoints = ',
-    suffix: ';',
+      "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
+export const breakpoints = ",
+    suffix: ";"
   )
 );

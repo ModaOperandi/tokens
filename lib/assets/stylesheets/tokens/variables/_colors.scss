@@ -1,0 +1,57 @@
+$colors-ui: (
+  "strawberry": #fadedd,
+  "code-red": #ee0700,
+  "lime": #e3fbe2,
+  "money-good": #046c00
+);
+
+$colors-greyscale: (
+  "black": #000000,
+  "cement": #646464,
+  "nokia": #969696,
+  "sidewalk": #afafaf,
+  "elephant": #bebebe,
+  "cashmere": #dedede,
+  "noise": #f5f5f5,
+  "white": #ffffff
+);
+
+$colors-global: (
+  "klein-blue": #263078,
+  "brick": #933a20,
+  "goldenrod": #ba912e,
+  "seafoam": #b1bfaa,
+  "coral": #ff9279
+);
+
+$colors-womens: (
+  "burnt-orange": #d56b27,
+  "lilac": #d7b3d0,
+  "forest-green": #003728,
+  "cream": #f8f5ee,
+  "fuchsia": #c44cb0
+);
+
+$colors-mens: (
+  "cornflower-blue": #7f9acf,
+  "moss-green": #68683b,
+  "blush": #f3ded9,
+  "light-grey": #f2f3f5,
+  "canary": #f0f659
+);
+
+$colors-all: __merge__(
+  $colors-greyscale,
+  $colors-global,
+  $colors-womens,
+  $colors-mens
+);
+
+$colors: (
+  all: $colors-all,
+  ui: $colors-ui,
+  global: $colors-global,
+  mens: $colors-mens,
+  womens: $colors-womens,
+  greyscale: $colors-greyscale
+);

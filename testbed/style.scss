@@ -1,10 +1,10 @@
-@import 'moda-themes';
+@import "tokens";
 
 @include global-styles;
-@include data-themes;
-@include set-root-theme('global');
 
 body {
-  background-color: color('canary', 0.9);
-  margin: space(5);
+  margin: space(6) space(6);
+  font-family: font-family("sans");
+  background-color: color("canary");
+  font-size: font-size(1);
 }

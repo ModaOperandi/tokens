@@ -1,14 +1,14 @@
 {
-  "name": "moda-themes",
-  "version": "5.0.0",
-  "description": "Constant themed values for modaoperandi.com",
-  "repository": "http://github.com/ModaOperandi/moda-themes",
-  "author": "Team Moda",
+  "name": "@moda/tokens",
+  "version": "0.0.0-development",
+  "description": "Constant values for modaoperandi.com",
+  "repository": "http://github.com/ModaOperandi/tokens",
+  "author": "Moda Operandi",
   "license": "MIT",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "style": "lib/assets/stylesheets/_moda-themes.scss",
+  "style": "lib/assets/stylesheets/_tokens.scss",
   "files": [
     "dist",
     "lib/assets"
@@ -17,10 +17,10 @@
     "clean": "rm -rf ./dist",
     "export": "tsc scripts/export.ts && node scripts/export.js",
     "build": "yarn clean && yarn export && yarn tsc",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy:local": "gh-pages -d example/build",
-    "deploy": "gh-pages --repo https://$GH_TOKEN@github.com/ModaOperandi/moda-themes.git -d example/build --silent",
-    "start": "cd example && yarn start"
+    "predeploy": "cd docs && yarn install && yarn run build",
+    "deploy:local": "gh-pages -d docs/build",
+    "deploy": "gh-pages --repo https://$GH_TOKEN@github.com/ModaOperandi/tokens.git -d docs/build --silent",
+    "start": "cd docs && yarn start"
   },
   "devDependencies": {
     "@types/node": "^12.7.4",

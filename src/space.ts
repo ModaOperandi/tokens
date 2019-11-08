@@ -1,22 +1,17 @@
 // THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
 export const space = {
   "scale": [
-    0,
-    "0.125em",
-    "0.25em",
-    "0.5em",
-    "0.75em",
-    "1em",
-    "1.5em",
-    "2em",
-    "3em",
-    "4em",
-    "6em",
-    "8em",
-    "12em"
-  ],
-  "z-indexes": {
-    "primary-nav": 9998,
-    "modal": 1000100
-  }
+    "0rem",
+    "0.25rem",
+    "0.5rem",
+    "0.75rem",
+    "1rem",
+    "1.5rem",
+    "2rem",
+    "3rem",
+    "4rem",
+    "6rem",
+    "8rem",
+    "12rem"
+  ]
 };

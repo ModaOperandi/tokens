@@ -1,48 +1,52 @@
 // THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
 export const typography = {
   "fonts": {
-    "global": {
-      "title": [
-        "Moda Operandi Serif",
-        "Times New Roman",
-        "Times",
-        "serif"
-      ],
-      "sans": [
-        "Moda Operandi Sans",
-        "Arial",
-        "sans-serif"
-      ],
-      "serif": [
-        "Moda Operandi Serif",
-        "Times New Roman",
-        "Times",
-        "serif"
-      ],
-      "body": [
-        "Caslon",
-        "Times New Roman",
-        "Times",
-        "serif"
-      ]
-    }
+    "sans": [
+      "Moda Operandi Sans",
+      "Arial",
+      "sans-serif"
+    ],
+    "serif": [
+      "Moda Operandi Serif",
+      "Times New Roman",
+      "Times",
+      "serif"
+    ],
+    "title": [
+      "Moda Operandi Serif",
+      "Times New Roman",
+      "Times",
+      "serif"
+    ],
+    "body": [
+      "Caslon",
+      "Times New Roman",
+      "Times",
+      "serif"
+    ]
   },
-  "line-heights": {
-    "base": 1.25,
-    "sm": 1.33,
-    "md": 1.5
-  },
-  "letter-spacing": {
-    "base": 0,
-    "sm": "0.02em",
-    "md": "0.04em",
-    "lg": "0.1em",
-    "wide": "0.04em",
-    "wider": "0.1em"
-  },
-  "font-sizes": {
-    "xs": "10px",
-    "sm": "12px",
-    "md": "13px"
-  }
+  "line-heights": [
+    1,
+    1.25,
+    1.33,
+    1.5
+  ],
+  "letter-spacing": [
+    0,
+    "0.02em",
+    "0.04em",
+    "0.1em"
+  ],
+  "font-scale": [
+    "0.75rem",
+    "0.8125rem",
+    "1rem",
+    "1.25rem",
+    "1.5rem",
+    "1.75rem",
+    "2rem",
+    "3rem",
+    "3.75rem"
+  ],
+  "root-font-size": "16px"
 };

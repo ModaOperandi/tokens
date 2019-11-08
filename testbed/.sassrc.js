@@ -1,5 +1,7 @@
-const { includePaths } = require('moda-themes');
+const { includePaths } = require("@moda/tokens");
+
+console.log({ includePaths });
 
 module.exports = {
-  includePaths,
+  includePaths
 };

@@ -1,0 +1,38 @@
+/// Returns the named value of a map. Throws an error if it does not exist.
+///
+/// @param {map} $map
+///   The map to access
+/// @param {string} $key
+///   The key to access
+/// @return {any} keyed value of `$map`
+@function __fetch__($map, $key) {
+  @if map-has-key($map, $key) {
+    @return map-get($map, $key);
+  } @else {
+    @error "ERROR: the key: '#{$key}' is not defined";
+  }
+}
+
+/// Returns the 0-indexed value of a list. Throws an error if it does not exist.
+///
+/// @param {list} $list
+///   The list to access
+/// @param {integer (unitless)} $index
+///   The 0-based index to access
+/// @return {any} positional value of `$list`
+@function __access__($list, $index) {
+  @return nth($list, $index + 1);
+}
+
+/// Merge multiple maps
+///
+/// @param {maps} $maps
+///   The list of maps to merge
+/// @return {map} merged map
+@function __merge__($maps...) {
+  $collection: ();
+  @each $map in $maps {
+    $collection: map-merge($collection, $map);
+  }
+  @return $collection;
+}

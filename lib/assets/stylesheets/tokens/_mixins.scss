@@ -1,0 +1,21 @@
+@import "variables";
+@import "functions";
+
+@mixin breakpoint($key) {
+  @media (min-width: __fetch__($breakpoints, $key)) {
+    @content;
+  }
+}
+
+@mixin global-styles() {
+  html {
+    box-sizing: border-box;
+    font-size: $root-font-size;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+}
