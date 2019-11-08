@@ -21,11 +21,11 @@ export const App: React.FC = () => (
 
     <NearestColor />
 
-    {/* <Section>
+    <Section>
       <h2>Spacing Scale</h2>
 
       <SpaceScale />
-    </Section> */}
+    </Section>
 
     <Section>
       <h2>Typography</h2>
