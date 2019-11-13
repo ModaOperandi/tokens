@@ -8,7 +8,7 @@ $fonts: (
   serif: $font-stack-moda-serif
 );
 
-$line-heights: 1, 1.25, 1.33, 1.5;
+$line-heights: 1.1, 1.2, 1.4, 1.6;
 
 $letter-spacing: 0, 0.02em, 0.04em, 0.1em;
 
@@ -18,10 +18,10 @@ $font-scale: (
   1rem,
   1.25rem,
   1.5rem,
-  1.75rem,
   2rem,
   3rem,
-  3.75rem
+  3.75rem,
+  6rem
 );
 
 $typography: (
