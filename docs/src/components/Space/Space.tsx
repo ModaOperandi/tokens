@@ -2,10 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { space, colors, typography } from "@moda/tokens";
 
+import { Copy } from "../Copy";
+
 const Container = styled.div`
   padding: ${space.scale[5]};
   color: ${colors.all["klein-blue"]};
-  background-color: ${colors.all["lilac"]};
+  background-color: ${colors.all.lilac};
 `;
 
 const Unit = styled.div`
@@ -41,19 +43,21 @@ const Value = styled.div`
   flex: 1;
 `;
 
-export const SpaceScale = () => {
+export const Space = () => {
   return (
     <Container>
       {space.scale.map((size, i) => (
-        <Unit key={size}>
-          <Label>
-            space({i}) = {size}
-          </Label>
+        <Copy key={size} copy={`space(${i})`}>
+          <Unit>
+            <Label>
+              space({i}) = {size} ({parseFloat(size) * 16}px)
+            </Label>
 
-          <Value>
-            <Measure size={size} />
-          </Value>
-        </Unit>
+            <Value>
+              <Measure size={size} />
+            </Value>
+          </Unit>
+        </Copy>
       ))}
     </Container>
   );

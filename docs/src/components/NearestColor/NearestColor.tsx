@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { colors, space } from "@moda/tokens";
 
 import { findNearestColorOrGrey } from "../../lib/findNearest";
-import { Swatch } from "../Swatch";
+import { Swatch } from "../Swatch/Swatch";
 
 const Container = styled.div`
   display: flex;
@@ -11,10 +11,14 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
+const Swatches = styled.div`
+  width: 25%;
+`;
+
 const Filter = styled.input`
   padding: ${space.scale[1]} ${space.scale[3]};
   border-radius: 1rem;
-  border: 1px solid ${colors.all.cashmere};
+  border: 1px solid ${colors.all.elephant};
   margin-bottom: ${space.scale[4]};
 
   &:focus {
@@ -51,8 +55,10 @@ export const NearestColor = () => {
         onChange={handleChange}
       />
 
-      {requested && <Swatch {...requested} />}
-      {nearest && <Swatch {...nearest} />}
+      <Swatches>
+        {requested && <Swatch {...requested} />}
+        {nearest && <Swatch {...nearest} />}
+      </Swatches>
     </Container>
   );
 };

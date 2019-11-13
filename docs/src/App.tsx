@@ -5,7 +5,7 @@ import { colors, space } from "@moda/tokens";
 import { GlobalStyles } from "./components/GlobalStyles";
 import { NearestColor } from "./components/NearestColor";
 import { Breakpoints } from "./components/Breakpoints";
-import { SpaceScale } from "./components/SpaceScale";
+import { Space } from "./components/Space";
 import { Typography } from "./components/Typography";
 import { Palette } from "./components/Palette";
 
@@ -24,7 +24,7 @@ export const App: React.FC = () => (
     <Section>
       <h2>Spacing Scale</h2>
 
-      <SpaceScale />
+      <Space />
     </Section>
 
     <Section>

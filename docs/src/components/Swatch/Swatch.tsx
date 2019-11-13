@@ -3,6 +3,7 @@ import styled from "styled-components";
 import chroma from "chroma-js";
 import { space, typography } from "@moda/tokens";
 
+import { Copy } from "../Copy";
 import { getContrastYIQ } from "../../lib/getContrastYIQ";
 
 const { scale: ss } = space;
@@ -11,7 +12,7 @@ const Container = styled.div<{ fg?: string; bg?: string }>`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 33.33%;
+  width: 100%;
   font-size: ${typography["font-scale"][1]};
   padding: ${ss[3]} ${ss[4]} ${ss[7]} ${ss[4]};
   color: ${props => props.fg};
@@ -75,12 +76,14 @@ export const Swatch: React.FC<Props> = ({
     const fg = getContrastYIQ({ r, g, b, a });
 
     return (
-      <Container bg={value} fg={fg} {...rest}>
-        <span>{name}</span>
-        <span>rgb({rgb.join(",")})</span>
-        <span>text: {fg}</span>
-        <span>{hex}</span>
-      </Container>
+      <Copy copy={`color("${name}")`}>
+        <Container bg={value} fg={fg} {...rest}>
+          <span>{name}</span>
+          <span>rgb({rgb.join(",")})</span>
+          <span>text: {fg}</span>
+          <span>{hex}</span>
+        </Container>
+      </Copy>
     );
   }
 
