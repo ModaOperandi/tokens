@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { space } from "@moda/tokens";
+import { space, colors } from "@moda/tokens";
 
-import { Swatch } from "../Swatch";
+import { Swatch } from "../Swatch/Swatch";
 
 const Container = styled.div`
   margin: ${space.scale[7]} auto;
@@ -11,6 +11,13 @@ const Container = styled.div`
 const Colors = styled.div`
   display: flex;
   flex-wrap: wrap;
+  background-color: ${colors.all.noise};
+  padding: ${space.scale[1]};
+  border-radius: 0.25em;
+
+  > * {
+    flex-basis: 25%;
+  }
 `;
 
 interface Props {

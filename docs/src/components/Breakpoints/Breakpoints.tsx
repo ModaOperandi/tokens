@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { breakpoints, colors, space, typography } from "@moda/tokens";
 
+import { Copy } from "../Copy";
+
 const Container = styled.div`
   position: relative;
   overflow: hidden;
@@ -23,22 +25,22 @@ const Container = styled.div`
       ${colors.all["goldenrod"]}
     );
   }
-
-  &:hover {
-    margin-right: -100%;
-  }
 `;
 
 const Breakpoint = styled.div<{ value: string }>`
-  border-top: 3px solid;
-  width: ${({ value }) => value};
+  position: relative;
   font-size: ${typography["font-scale"][2]};
-  padding: ${space.scale[2]} 0 ${space.scale[4]} 0;
-  margin-bottom: ${space.scale[7]};
+  padding: ${space.scale[3]} ${space.scale[4]};
+  margin: ${space.scale[3]} 0;
 
-  &:last-child {
-    padding-bottom: 0;
-    margin-bottom: ${space.scale[5]};
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 3px solid;
+    width: ${({ value }) => value};
   }
 `;
 
@@ -47,10 +49,12 @@ export const Breakpoints = () => {
     <Container>
       {Object.entries(breakpoints).map(([key, value]) => {
         return (
-          <Breakpoint value={value}>
-            {key.toUpperCase()} — @include breakpoint('{key}') = @media
-            (min-width: {value}) {"{"} ... {"}"}
-          </Breakpoint>
+          <Copy key={value} copy={`@include breakpoint('{key}');`}>
+            <Breakpoint value={value}>
+              {key.toUpperCase()} — @include breakpoint('{key}') = @media
+              (min-width: {value}) {"{"} ... {"}"}
+            </Breakpoint>
+          </Copy>
         );
       })}
     </Container>
