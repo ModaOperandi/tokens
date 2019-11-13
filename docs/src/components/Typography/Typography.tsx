@@ -8,8 +8,8 @@ import { LetterSpacing } from "./LetterSpacing";
 
 const Container = styled.div`
   padding: ${space.scale[5]};
-  color: ${colors.all["black"]};
-  background-color: ${colors.all["seafoam"]};
+  color: ${colors.all.ink};
+  background-color: ${colors.all.seafoam};
 `;
 
 export const Typography: React.FC = () => (

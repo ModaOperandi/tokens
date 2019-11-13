@@ -25,7 +25,7 @@ const Wrapper = styled.div`
     bottom: 0;
     left: 0;
     z-index: 1;
-    box-shadow: 0 0 0 2px ${colors.all.white};
+    box-shadow: 0 0 0 2px ${colors.all.snow};
     border-radius: 0.125em;
     opacity: 0;
     transition: opacity 100ms;
@@ -45,8 +45,8 @@ const Status = styled.div`
   transform: translate(-50%, -50%);
   padding: ${space.scale[1]} ${space.scale[2]};
   border-radius: 0.25em;
-  color: ${colors.all.black};
-  background-color: ${colors.all.white};
+  color: ${colors.all.ink};
+  background-color: ${colors.all.snow};
   font-family: ${typography.fonts.sans.join(",")};
   font-size: ${typography["font-scale"][0]};
   text-align: center;

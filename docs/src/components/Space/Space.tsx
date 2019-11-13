@@ -7,7 +7,7 @@ import { Copy } from "../Copy";
 const Container = styled.div`
   padding: ${space.scale[5]};
   color: ${colors.all["klein-blue"]};
-  background-color: ${colors.all["lilac"]};
+  background-color: ${colors.all.lilac};
 `;
 
 const Unit = styled.div`

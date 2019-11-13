@@ -18,7 +18,7 @@ const Swatches = styled.div`
 const Filter = styled.input`
   padding: ${space.scale[1]} ${space.scale[3]};
   border-radius: 1rem;
-  border: 1px solid ${colors.all.cashmere};
+  border: 1px solid ${colors.all.elephant};
   margin-bottom: ${space.scale[4]};
 
   &:focus {

@@ -7,8 +7,8 @@ import { Copy } from "../Copy";
 const Container = styled.div`
   position: relative;
   overflow: hidden;
-  background-color: ${colors.all["goldenrod"]};
-  color: ${colors.all["canary"]};
+  background-color: ${colors.all.goldenrod};
+  color: ${colors.all.canary};
   padding: ${space.scale[6]};
 
   &:after {
@@ -22,7 +22,7 @@ const Container = styled.div`
     background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0.001),
-      ${colors.all["goldenrod"]}
+      ${colors.all.goldenrod}
     );
   }
 `;
