@@ -1,6 +1,10 @@
 // THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
 export const colors = {
   "all": {
+    "strawberry": "rgb(250, 222, 221)",
+    "code-red": "rgb(238, 7, 0)",
+    "lime": "rgb(227, 251, 226)",
+    "money-good": "rgb(4, 108, 0)",
     "black": "rgb(0, 0, 0)",
     "cement": "rgb(100, 100, 100)",
     "nokia": "rgb(150, 150, 150)",

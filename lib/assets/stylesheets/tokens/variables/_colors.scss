@@ -41,6 +41,7 @@ $colors-mens: (
 );
 
 $colors-all: __merge__(
+  $colors-ui,
   $colors-greyscale,
   $colors-global,
   $colors-womens,
