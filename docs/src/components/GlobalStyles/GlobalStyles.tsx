@@ -1,4 +1,4 @@
-import { typography, space } from "@moda/tokens";
+import { typography, space, breakpoints } from "@moda/tokens";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
@@ -16,6 +16,11 @@ export const GlobalStyles = createGlobalStyle`
     margin: ${space.scale[7]};
     padding: ${space.scale[7]};
     font-size: ${typography["root-font-size"]};
+
+    @media (max-width: ${breakpoints.md}) {
+      margin: ${space.scale[7]} 0;
+      padding: ${space.scale[7]} 0;
+    }
   }
 
   body,

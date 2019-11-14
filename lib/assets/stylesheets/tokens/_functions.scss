@@ -29,3 +29,7 @@
 @function space($index) {
   @return __access__(map-get($space, "scale"), $index);
 }
+
+@function text-treatment($key) {
+  @return __fetch__(map-get($typography, "text-treatments"), $key);
+}

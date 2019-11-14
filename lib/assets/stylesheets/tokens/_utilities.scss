@@ -6,8 +6,8 @@
 ///   The key to access
 /// @return {any} keyed value of `$map`
 @function __fetch__($map, $key) {
-  @if map-has-key($map, $key) {
-    @return map-get($map, $key);
+  @if map-has-key($map, quote($key)) {
+    @return map-get($map, quote($key));
   } @else {
     @error "ERROR: the key: '#{$key}' is not defined";
   }

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { space, colors } from "@moda/tokens";
 
+import { TextTreatments } from "./TextTreatments";
 import { FontSize } from "./FontSize";
 import { LineHeight } from "./LineHeight";
 import { LetterSpacing } from "./LetterSpacing";
@@ -14,8 +15,12 @@ const Container = styled.div`
 
 export const Typography: React.FC = () => (
   <Container>
+    <TextTreatments />
+
     <FontSize />
+
     <LineHeight />
+
     <LetterSpacing />
   </Container>
 );
