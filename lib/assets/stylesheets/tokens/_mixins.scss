@@ -1,12 +1,6 @@
 @import "variables";
 @import "functions";
 
-@mixin breakpoint($key) {
-  @media (min-width: __fetch__($breakpoints, $key)) {
-    @content;
-  }
-}
-
 @mixin global-styles() {
   html {
     box-sizing: border-box;
@@ -18,4 +12,25 @@
   *::after {
     box-sizing: inherit;
   }
+}
+
+@mixin compound($map) {
+  @each $prop, $value in $map {
+    @if type-of($value) == string {
+      #{$prop}: #{unquote($value)};
+    } @else {
+      #{$prop}: #{$value};
+    }
+  }
+}
+
+@mixin breakpoint($key, $prop: min-width) {
+  @media (#{$prop}: __fetch__($breakpoints, $key)) {
+    @content;
+  }
+}
+
+@mixin text($key, $font: sans) {
+  font-family: font-family($font);
+  @include compound(text-treatment($key));
 }

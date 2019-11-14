@@ -4,7 +4,11 @@
 
 body {
   margin: space(6) space(6);
-  font-family: font-family("sans");
-  background-color: color("canary");
-  font-size: font-size(1);
+  background-color: color(canary);
+  @include text(h1, $font: serif);
+
+  @include breakpoint(md, $prop: max-width) {
+    background-color: color(lilac);
+    font-family: font-family(sans);
+  }
 }

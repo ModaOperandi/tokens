@@ -49,7 +49,7 @@ export const Breakpoints = () => {
     <Container>
       {Object.entries(breakpoints).map(([key, value]) => {
         return (
-          <Copy key={value} copy={`@include breakpoint('{key}');`}>
+          <Copy key={value} copy={`@include breakpoint(${key});`}>
             <Breakpoint value={value}>
               {key.toUpperCase()} — @include breakpoint('{key}') = @media
               (min-width: {value}) {"{"} ... {"}"}

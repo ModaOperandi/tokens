@@ -76,7 +76,7 @@ export const Swatch: React.FC<Props> = ({
     const fg = getContrastYIQ({ r, g, b, a });
 
     return (
-      <Copy copy={`color("${name}")`}>
+      <Copy copy={`color(${name})`}>
         <Container bg={value} fg={fg} {...rest}>
           <span>{name}</span>
           <span>rgb({rgb.join(",")})</span>

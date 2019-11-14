@@ -1,3 +1,5 @@
+@import "../utilities";
+
 $root-font-size: 16px;
 
 $font-stack-moda-sans: "Moda Operandi Sans", Arial, sans-serif;
@@ -24,10 +26,65 @@ $font-scale: (
   6rem
 );
 
+$text-treatments: (
+  h1: (
+    font-size: __access__($font-scale, 8),
+    line-height: __access__($line-heights, 0),
+    letter-spacing: __access__($letter-spacing, 0)
+  ),
+  h2: (
+    font-size: __access__($font-scale, 7),
+    line-height: __access__($line-heights, 1),
+    letter-spacing: __access__($letter-spacing, 0)
+  ),
+  h3: (
+    font-size: __access__($font-scale, 6),
+    line-height: __access__($line-heights, 0),
+    letter-spacing: __access__($letter-spacing, 0)
+  ),
+  h4: (
+    font-size: __access__($font-scale, 5),
+    line-height: __access__($line-heights, 1),
+    letter-spacing: __access__($letter-spacing, 0)
+  ),
+  h5: (
+    font-size: __access__($font-scale, 4),
+    line-height: __access__($line-heights, 2),
+    letter-spacing: __access__($letter-spacing, 0)
+  ),
+  h6: (
+    font-size: __access__($font-scale, 3),
+    line-height: __access__($line-heights, 2),
+    letter-spacing: __access__($letter-spacing, 1)
+  ),
+  h7: (
+    font-size: __access__($font-scale, 2),
+    line-height: __access__($line-heights, 2),
+    letter-spacing: __access__($letter-spacing, 2)
+  ),
+  body1: (
+    font-size: __access__($font-scale, 1),
+    line-height: __access__($line-heights, 3),
+    letter-spacing: __access__($letter-spacing, 2)
+  ),
+  body2: (
+    font-size: __access__($font-scale, 0),
+    line-height: __access__($line-heights, 2),
+    letter-spacing: __access__($letter-spacing, 2)
+  ),
+  eyebrow: (
+    font-size: __access__($font-scale, 0),
+    line-height: __access__($line-heights, 2),
+    letter-spacing: __access__($letter-spacing, 3),
+    text-transform: uppercase
+  )
+);
+
 $typography: (
   fonts: $fonts,
   line-heights: $line-heights,
   letter-spacing: $letter-spacing,
   font-scale: $font-scale,
-  root-font-size: $root-font-size
+  root-font-size: $root-font-size,
+  text-treatments: $text-treatments
 );
