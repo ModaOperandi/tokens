@@ -1,7 +1,5 @@
 @import "tokens";
 
-@include global-styles;
-
 body {
   margin: space(6) space(6);
   background-color: color(canary);
