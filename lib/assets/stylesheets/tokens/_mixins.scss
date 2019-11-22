@@ -1,19 +1,6 @@
 @import "variables";
 @import "functions";
 
-@mixin global-styles() {
-  html {
-    box-sizing: border-box;
-    font-size: $root-font-size;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-}
-
 @mixin compound($map) {
   @each $prop, $value in $map {
     @if type-of($value) == string {
