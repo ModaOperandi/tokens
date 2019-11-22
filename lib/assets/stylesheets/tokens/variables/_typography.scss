@@ -27,37 +27,37 @@ $font-scale: (
 );
 
 $text-treatments: (
-  h1: (
+  display: (
     font-size: __access__($font-scale, 8),
     line-height: __access__($line-heights, 0),
     letter-spacing: __access__($letter-spacing, 0)
   ),
-  h2: (
+  h1: (
     font-size: __access__($font-scale, 7),
     line-height: __access__($line-heights, 1),
     letter-spacing: __access__($letter-spacing, 0)
   ),
-  h3: (
+  h2: (
     font-size: __access__($font-scale, 6),
     line-height: __access__($line-heights, 0),
     letter-spacing: __access__($letter-spacing, 0)
   ),
-  h4: (
+  h3: (
     font-size: __access__($font-scale, 5),
     line-height: __access__($line-heights, 1),
     letter-spacing: __access__($letter-spacing, 0)
   ),
-  h5: (
+  h4: (
     font-size: __access__($font-scale, 4),
     line-height: __access__($line-heights, 2),
     letter-spacing: __access__($letter-spacing, 0)
   ),
-  h6: (
+  h5: (
     font-size: __access__($font-scale, 3),
     line-height: __access__($line-heights, 2),
     letter-spacing: __access__($letter-spacing, 1)
   ),
-  h7: (
+  h6: (
     font-size: __access__($font-scale, 2),
     line-height: __access__($line-heights, 2),
     letter-spacing: __access__($letter-spacing, 2)

@@ -38,37 +38,37 @@ export const typography = {
   ],
   "root-font-size": "16px",
   "text-treatments": {
-    "h1": {
+    "display": {
       "font-size": "6rem",
       "line-height": 1.1,
       "letter-spacing": 0
     },
-    "h2": {
+    "h1": {
       "font-size": "3.75rem",
       "line-height": 1.2,
       "letter-spacing": 0
     },
-    "h3": {
+    "h2": {
       "font-size": "3rem",
       "line-height": 1.1,
       "letter-spacing": 0
     },
-    "h4": {
+    "h3": {
       "font-size": "2rem",
       "line-height": 1.2,
       "letter-spacing": 0
     },
-    "h5": {
+    "h4": {
       "font-size": "1.5rem",
       "line-height": 1.4,
       "letter-spacing": 0
     },
-    "h6": {
+    "h5": {
       "font-size": "1.25rem",
       "line-height": 1.4,
       "letter-spacing": "0.02em"
     },
-    "h7": {
+    "h6": {
       "font-size": "1rem",
       "line-height": 1.4,
       "letter-spacing": "0.04em"
