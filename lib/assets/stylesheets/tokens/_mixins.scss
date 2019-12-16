@@ -11,9 +11,22 @@
   }
 }
 
+
 @mixin breakpoint($key, $prop: min-width) {
-  @media (#{$prop}: __fetch__($breakpoints, $key)) {
-    @content;
+  $numberOfPxIn1Rem : strip-units($root-font-size);
+  $onePxInRemUnit : 1/$numberOfPxIn1Rem;
+
+  @if $prop == max-width {
+    @media (#{$prop}: __fetch__($breakpoints, $key)) {
+      @content;
+    }
+  }
+
+  @debug (__fetch__($breakpoints, $key) + $onePxInRemUnit);
+  @if $prop == min-width {
+    @media (#{$prop}: (__fetch__($breakpoints, $key) + $onePxInRemUnit)) {
+      @content;
+    }
   }
 }
 

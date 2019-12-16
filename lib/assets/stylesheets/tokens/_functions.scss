@@ -33,3 +33,8 @@
 @function text-treatment($key) {
   @return __fetch__(map-get($typography, "text-treatments"), $key);
 }
+
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
