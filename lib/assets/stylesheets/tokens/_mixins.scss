@@ -22,7 +22,6 @@
     }
   }
 
-  @debug (__fetch__($breakpoints, $key) + $onePxInRemUnit);
   @if $prop == min-width {
     @media (#{$prop}: (__fetch__($breakpoints, $key) + $onePxInRemUnit)) {
       @content;
