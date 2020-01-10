@@ -31,7 +31,7 @@
     "node-sass": "^4.12.0",
     "node-sass-export": "^0.0.6",
     "typescript": "^3.6.2",
-    "semantic-release": "^15.13.30"
+    "semantic-release": "^16.0.1"
   },
   "config": {
     "commitizen": {
