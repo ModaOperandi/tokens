@@ -1,9 +1,10 @@
 @import "tokens";
 
 body {
-  margin: space(6) space(6);
-  background-color: color(canary);
   @include text(h1, $font: serif);
+
+  margin: space(6) space("2x"); // same value => 2rem
+  background-color: color(canary);
 
   @include breakpoint(md, $prop: max-width) {
     background-color: color(lilac);
