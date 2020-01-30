@@ -27,7 +27,6 @@
 }
 
 @function space($indexOrKey) {
-  @debug type-of($indexOrKey);
   @if type-of($indexOrKey) != number {
     @return __fetch__(map-get($space, "map"), $indexOrKey);
   }
