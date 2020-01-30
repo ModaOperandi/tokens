@@ -1,6 +1,49 @@
-$spacing-scale: 0rem, 0.25rem, 0.5rem, 0.75rem, 1rem, 1.5rem, 2rem, 3rem, 4rem,
-  6rem, 8rem, 12rem;
+$spacing-scale: (
+  // 0 - 0x
+    0rem,
+  // 1 - quarter-x
+    0.25rem,
+  // 2 - half-x
+    0.5rem,
+  // 3 - three-quarter-x
+    0.75rem,
+  // 4 - 1x
+    1rem,
+  // 5 - one-and-a-half-x
+    1.5rem,
+  // 6 - 2x
+    2rem,
+  // 7 - 3x
+    3rem,
+  // 8 - 4x
+    4rem,
+  // 9 - 6x
+    6rem,
+  // 10 - 8x
+    8rem,
+  // 11 - 12x
+    12rem,
+  // 12 - 24x
+    24rem
+);
+
+$spacing-map: (
+  "0x": __access__($spacing-scale, 0),
+  "quarter-x": __access__($spacing-scale, 1),
+  "half-x": __access__($spacing-scale, 2),
+  "three-quarter-x": __access__($spacing-scale, 3),
+  "1x": __access__($spacing-scale, 4),
+  "one-and-a-half-x": __access__($spacing-scale, 5),
+  "2x": __access__($spacing-scale, 6),
+  "3x": __access__($spacing-scale, 7),
+  "4x": __access__($spacing-scale, 8),
+  "6x": __access__($spacing-scale, 9),
+  "8x": __access__($spacing-scale, 10),
+  "12x": __access__($spacing-scale, 11),
+  "24x": __access__($spacing-scale, 12)
+);
 
 $space: (
-  scale: $spacing-scale
+  scale: $spacing-scale,
+  map: $spacing-map
 );

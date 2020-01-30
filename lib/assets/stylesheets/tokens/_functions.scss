@@ -26,14 +26,18 @@
   @return __access__(map-get($typography, "font-scale"), $index);
 }
 
-@function space($index) {
-  @return __access__(map-get($space, "scale"), $index);
+@function space($indexOrKey) {
+  @debug type-of($indexOrKey);
+  @if type-of($indexOrKey) != number {
+    @return __fetch__(map-get($space, "map"), $indexOrKey);
+  }
+
+  @return __access__(map-get($space, "scale"), $indexOrKey);
 }
 
 @function text-treatment($key) {
   @return __fetch__(map-get($typography, "text-treatments"), $key);
 }
-
 
 @function strip-units($number) {
   @return $number / ($number * 0 + 1);

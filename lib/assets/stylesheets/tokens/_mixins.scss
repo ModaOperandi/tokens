@@ -1,16 +1,15 @@
 @import "variables";
 @import "functions";
 
-@mixin compound($map) {
+@mixin compound($map, $important: false) {
   @each $prop, $value in $map {
     @if type-of($value) == string {
-      #{$prop}: #{unquote($value)};
+      #{$prop}: #{unquote($value)} if($important, !important, null);
     } @else {
-      #{$prop}: #{$value};
+      #{$prop}: #{$value} if($important, !important, null);
     }
   }
 }
-
 
 @mixin breakpoint($key, $prop: min-width) {
   $number-of-px-in-one-rem: strip-units($root-font-size);
@@ -29,7 +28,7 @@
   }
 }
 
-@mixin text($key, $font: sans) {
-  font-family: font-family($font);
-  @include compound(text-treatment($key));
+@mixin text($key, $font: sans, $important: false) {
+  font-family: font-family($font) if($important, !important, null);
+  @include compound(text-treatment($key), $important);
 }
