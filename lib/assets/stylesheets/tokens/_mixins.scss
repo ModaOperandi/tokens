@@ -4,9 +4,9 @@
 @mixin compound($map, $important: false) {
   @each $prop, $value in $map {
     @if type-of($value) == string {
-      #{$prop}: #{unquote($value)} if($important, !important, null);
+      #{$prop}: #{unquote($value)} important($important, $prop);
     } @else {
-      #{$prop}: #{$value} if($important, !important, null);
+      #{$prop}: #{$value} important($important, $prop);
     }
   }
 }
@@ -29,6 +29,6 @@
 }
 
 @mixin text($key, $font: sans, $important: false) {
-  font-family: font-family($font) if($important, !important, null);
+  font-family: font-family($font) important($important, font-family);
   @include compound(text-treatment($key), $important);
 }
