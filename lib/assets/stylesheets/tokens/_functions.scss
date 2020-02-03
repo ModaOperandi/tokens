@@ -41,3 +41,20 @@
 @function strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
+
+/// @param {prop (string)} $prop
+///   The 0-based index to access
+/// @param {list | bool} $list
+///   Either list of properties
+/// @return {string | null} declares !important or not
+@function important($important: false, $prop: null) {
+  @if type-of($important) == bool {
+    @return if($important, !important, null);
+  }
+
+  @if type-of($important) == list {
+    @return if(index($important, $prop), !important, null);
+  }
+
+  @return null;
+}
