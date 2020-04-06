@@ -36,12 +36,18 @@
   @return __access__(map-get($space, "scale"), $indexOrKey);
 }
 
-@function text-treatment($key) {
-  @return __fetch__(map-get($typography, "text-treatments"), $key);
+@function spacing($indices...) {
+  $spacing: ();
+
+  @each $index in $indices {
+    $spacing: append($spacing, space($index));
+  }
+
+  @return $spacing;
 }
 
-@function strip-units($number) {
-  @return $number / ($number * 0 + 1);
+@function text-treatment($key) {
+  @return __fetch__(map-get($typography, "text-treatments"), $key);
 }
 
 /// @param {prop (string)} $prop

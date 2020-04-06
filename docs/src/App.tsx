@@ -47,7 +47,7 @@ export const App: React.FC = () => (
     <NearestColor />
 
     <Section>
-      <H2 id="space">Spacing Scale</H2>
+      <H2 id="spacing">Spacing Scale</H2>
 
       <P>
         Utilize units from the scale over hardcoded-values to ensure a
