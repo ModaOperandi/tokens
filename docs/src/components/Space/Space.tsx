@@ -1,18 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { space, colors, typography } from "@moda/tokens";
-
+import { space, spacing, text, color } from "@moda/tokens";
 import { Copy } from "../Copy";
 
 const Container = styled.div`
   padding: ${space.scale[5]};
-  color: ${colors.all["klein-blue"]};
-  background-color: ${colors.all.lilac};
+  color: ${color("klein-blue")};
+  background-color: ${color("lilac")};
 `;
 
 const Unit = styled.div`
   display: flex;
-  margin: ${space.scale[6]} 0;
+  margin: ${spacing(6, 0)};
   align-items: center;
   justify-content: center;
 `;
@@ -20,8 +19,8 @@ const Unit = styled.div`
 const Measure = styled.div<{ size: string }>`
   position: relative;
   width: 100%;
-  height: ${props => props.size};
-  background-color: ${colors.all["klein-blue"]};
+  height: ${({ size }) => size};
+  background-color: ${color("klein-blue")};
 
   &:before {
     left: 100%;
@@ -33,10 +32,10 @@ const Measure = styled.div<{ size: string }>`
 `;
 
 const Label = styled.div`
-  font-size: ${typography["font-scale"][0]};
+  ${text("body2")};
   flex: 1;
   text-align: right;
-  padding-right: ${space.scale[4]};
+  padding-right: ${spacing(4)};
 `;
 
 const Value = styled.div`

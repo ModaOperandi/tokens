@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { breakpoints, colors, space, typography } from "@moda/tokens";
+import { breakpoints, colors, color, spacing, text } from "@moda/tokens";
 
 import { Copy } from "../Copy";
 
 const Container = styled.div`
   position: relative;
   overflow: hidden;
-  background-color: ${colors.all.goldenrod};
+  background-color: ${color("goldenrod")};
   color: ${colors.all.canary};
-  padding: ${space.scale[6]};
+  padding: ${spacing(6)};
 
   &:after {
     display: block;
@@ -22,16 +22,16 @@ const Container = styled.div`
     background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0.001),
-      ${colors.all.goldenrod}
+      ${color("goldenrod")}
     );
   }
 `;
 
 const Breakpoint = styled.div<{ value: string }>`
   position: relative;
-  font-size: ${typography["font-scale"][2]};
-  padding: ${space.scale[3]} ${space.scale[4]};
-  margin: ${space.scale[3]} 0;
+  padding: ${spacing(3, 4)};
+  margin: ${spacing(3, 0)};
+  ${text("h6")}
 
   &:after {
     display: block;
