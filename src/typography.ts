@@ -11,6 +11,13 @@ export const typography = {
       "Times New Roman",
       "Times",
       "serif"
+    ],
+    "code": [
+      "Menlo",
+      "Monaco",
+      "Consolas",
+      "Courier New",
+      "monospace"
     ]
   },
   "line-heights": [
