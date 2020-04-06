@@ -14,15 +14,17 @@
   }
 }
 
-@function letter-spacing($index) {
+// `__dangerously-get-` functions are named this way to discourage their use.
+// Users of this library should always be utilizing codified text treatments via the `text` mixin.
+@function __dangerously-get-letter-spacing__($index) {
   @return __access__(map-get($typography, "letter-spacing"), $index);
 }
 
-@function line-height($index) {
+@function __dangerously-get-line-height__($index) {
   @return __access__(map-get($typography, "line-heights"), $index);
 }
 
-@function font-size($index) {
+@function __dangerously-get-font-size__($index) {
   @return __access__(map-get($typography, "font-scale"), $index);
 }
 
