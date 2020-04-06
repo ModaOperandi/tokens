@@ -1,4 +1,4 @@
-import { typography, space, breakpoints } from "@moda/tokens";
+import { typography, spacing, breakpoints, text } from "@moda/tokens";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
@@ -13,21 +13,20 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    margin: ${space.scale[7]};
-    padding: ${space.scale[7]};
+    margin: ${spacing(7)};
+    padding: ${spacing(7)};
     font-size: ${typography["root-font-size"]};
 
     @media (max-width: ${breakpoints.md}) {
-      margin: ${space.scale[7]} 0;
-      padding: ${space.scale[7]} 0;
+      margin: ${spacing(7, 0)};
+      padding: ${spacing(7, 0)};
     }
   }
 
   body,
   input {
-    font-family: ${typography.fonts.sans.join(",")};
     -webkit-font-smoothing: antialiased;
-    font-size: ${typography["font-scale"][2]};
+    ${text("body1")}
   }
 
   h1,
@@ -37,7 +36,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   pre {
-    margin: ${space.scale[6]} auto;
+    margin: ${spacing(6)} auto;
 
     &:first-child {
       margin-top: 0;

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { colors, space } from "@moda/tokens";
-
+import { color, spacing } from "@moda/tokens";
 import { findNearestColorOrGrey } from "../../lib/findNearest";
 import { Swatch } from "../Swatch/Swatch";
 
@@ -11,19 +10,17 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const Swatches = styled.div`
-  width: 25%;
-`;
+const Swatches = styled.div``;
 
 const Filter = styled.input`
-  padding: ${space.scale[1]} ${space.scale[3]};
+  padding: ${spacing(1, 4)};
   border-radius: 1rem;
-  border: 1px solid ${colors.all.elephant};
-  margin-bottom: ${space.scale[4]};
+  border: 1px solid ${color("elephant")};
+  margin-bottom: ${spacing(4)};
 
   &:focus {
     outline: none;
-    border-color: ${colors.all.elephant};
+    border-color: ${color("elephant")};
   }
 `;
 
@@ -34,7 +31,7 @@ export const NearestColor = () => {
   const [nearest, setNearest] = useState<ColorDistance | null>(null);
 
   const handleChange = ({
-    currentTarget: { value }
+    currentTarget: { value },
   }: React.ChangeEvent<HTMLInputElement>) => {
     try {
       const winner = findNearestColorOrGrey(value);

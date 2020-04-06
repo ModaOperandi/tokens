@@ -1,13 +1,16 @@
 @import "../utilities";
 
 $root-font-size: 16px;
+$root-one-px: 1 / unitless($root-font-size);
 
 $font-stack-moda-sans: "Moda Operandi Sans", Arial, sans-serif;
 $font-stack-moda-serif: "Moda Operandi Serif", "Times New Roman", Times, serif;
+$font-stack-code: Menlo, Monaco, Consolas, "Courier New", monospace;
 
 $fonts: (
   sans: $font-stack-moda-sans,
-  serif: $font-stack-moda-serif
+  serif: $font-stack-moda-serif,
+  code: $font-stack-code,
 );
 
 $line-heights: 1.1, 1.2, 1.4, 1.6;
@@ -30,54 +33,54 @@ $text-treatments: (
   display: (
     font-size: __access__($font-scale, 8),
     line-height: __access__($line-heights, 0),
-    letter-spacing: __access__($letter-spacing, 0)
+    letter-spacing: __access__($letter-spacing, 0),
   ),
   h1: (
     font-size: __access__($font-scale, 7),
     line-height: __access__($line-heights, 1),
-    letter-spacing: __access__($letter-spacing, 0)
+    letter-spacing: __access__($letter-spacing, 0),
   ),
   h2: (
     font-size: __access__($font-scale, 6),
     line-height: __access__($line-heights, 0),
-    letter-spacing: __access__($letter-spacing, 0)
+    letter-spacing: __access__($letter-spacing, 0),
   ),
   h3: (
     font-size: __access__($font-scale, 5),
     line-height: __access__($line-heights, 1),
-    letter-spacing: __access__($letter-spacing, 0)
+    letter-spacing: __access__($letter-spacing, 0),
   ),
   h4: (
     font-size: __access__($font-scale, 4),
     line-height: __access__($line-heights, 2),
-    letter-spacing: __access__($letter-spacing, 0)
+    letter-spacing: __access__($letter-spacing, 0),
   ),
   h5: (
     font-size: __access__($font-scale, 3),
     line-height: __access__($line-heights, 2),
-    letter-spacing: __access__($letter-spacing, 1)
+    letter-spacing: __access__($letter-spacing, 1),
   ),
   h6: (
     font-size: __access__($font-scale, 2),
     line-height: __access__($line-heights, 2),
-    letter-spacing: __access__($letter-spacing, 2)
+    letter-spacing: __access__($letter-spacing, 2),
   ),
   body1: (
     font-size: __access__($font-scale, 1),
     line-height: __access__($line-heights, 3),
-    letter-spacing: __access__($letter-spacing, 2)
+    letter-spacing: __access__($letter-spacing, 2),
   ),
   body2: (
     font-size: __access__($font-scale, 0),
     line-height: __access__($line-heights, 2),
-    letter-spacing: __access__($letter-spacing, 2)
+    letter-spacing: __access__($letter-spacing, 2),
   ),
   eyebrow: (
     font-size: __access__($font-scale, 0),
     line-height: __access__($line-heights, 2),
     letter-spacing: __access__($letter-spacing, 3),
-    text-transform: uppercase
-  )
+    text-transform: uppercase,
+  ),
 );
 
 $typography: (
@@ -86,5 +89,5 @@ $typography: (
   letter-spacing: $letter-spacing,
   font-scale: $font-scale,
   root-font-size: $root-font-size,
-  text-treatments: $text-treatments
+  text-treatments: $text-treatments,
 );

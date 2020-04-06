@@ -1,22 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import chroma from "chroma-js";
-import { space, typography } from "@moda/tokens";
+import { spacing, text } from "@moda/tokens";
 
 import { Copy } from "../Copy";
 import { getContrastYIQ } from "../../lib/getContrastYIQ";
-
-const { scale: ss } = space;
 
 const Container = styled.div<{ fg?: string; bg?: string }>`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  font-size: ${typography["font-scale"][1]};
-  padding: ${ss[3]} ${ss[4]} ${ss[7]} ${ss[4]};
-  color: ${props => props.fg};
-  background-color: ${props => props.bg};
+  padding: ${spacing(4)};
+  color: ${({ fg }) => fg};
+  background-color: ${({ bg }) => bg};
+  ${text("body1")};
 
   > span {
     flex-basis: 50%;
@@ -24,14 +22,6 @@ const Container = styled.div<{ fg?: string; bg?: string }>`
     &:nth-child(even) {
       text-align: right;
     }
-  }
-
-  @media (max-width: 1024px) {
-    width: 50%;
-  }
-
-  @media (max-width: 800px) {
-    width: 100%;
   }
 `;
 
