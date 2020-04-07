@@ -115,3 +115,92 @@ Allows one to append `!important` conditionally on the end of a given prop.
 ##### `compound($map, $important: false)`
 
 Accepts a map of styles and converts them into actual styles that can be mixed into a class.
+
+### TypeScript
+
+The package exports typed maps built from the SASS maps as well as some similar helper functions for accessing values.
+
+#### Maps
+
+```tsx
+colors;
+// => colors.all,
+//    colors.ui,
+//    colors.global,
+//    colors.mens,
+//    colors.womens,
+//    colors.greyscale
+
+typography;
+//  => typography.fonts
+//     typography['line-heights']
+//     typography['letter-spacing']
+//     typography['font-scale']
+//     typography['root-font-size']
+//     typography['text-treatments']
+
+space;
+// => space.scale
+//    space.map
+
+breakpoints;
+// => breakpoints.xs
+//    breakpoints.sm
+//    breakpoints.md
+//    breakpoints.lg
+//    breakpoints.xl
+```
+
+#### Functions
+
+##### `text`
+
+Accepts the name of a text treatment and, optionally, a font. Returns an object representing the CSS styles for that text treatment.
+
+```tsx
+type TextTreatment = "display" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "body1" | "body2" | "eyebrow"
+
+const text: (name: TextTreatment, font?: "serif" | "sans" | "code") => {
+    "font-family": string;
+    "line-height": string;
+    "font-size": string;
+    "letter-spacing": number;
+} | {
+    "font-family": string;
+    "line-height": string;
+    "font-size": string;
+    "letter-spacing": number;
+} | ... 7 more ... | {
+    ...;
+}
+```
+
+##### `remToUnitlessPx`
+
+Take some rem value `'0.8125rem'` and turn it into corresponding px (@ root) => `13`
+
+```tsx
+const remToUnitlessPx: (value: string) => number;
+```
+
+##### `color`
+
+Accepts the name of a color and returns back the corresponding hex value.
+
+```tsx
+type Color = "ink" | "cement" | "fog" | "elephant" | "noise" | "snow" | "strawberry" | "code-red" | "mint" | "money-good" | "fuchsia" | "klein-blue" | "brick" | "goldenrod" | "seafoam" | "coral" | ... 7 more ... | "canary"
+const color: (name: Color) => string
+```
+
+##### `spacing`
+
+Accepts indices from the space scale or strings and returns back spacing values. Example: `margin: ${spacing(8, "auto")};`
+
+```tsx
+const spacing: (
+  ty: number | string,
+  rx?: string | number | undefined,
+  b?: string | number | undefined,
+  l?: string | number | undefined
+) => string | number | undefined;
+```
