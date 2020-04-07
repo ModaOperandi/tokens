@@ -6,7 +6,7 @@ body {
   margin: space(6) space("2x"); // same value => 2rem
   background-color: color(canary);
 
-  @include breakpoint(md, $prop: max-width) {
+  @include breakpoint(md) {
     @include text(h1, $font: sans, $important: true);
 
     background-color: color(lilac);
