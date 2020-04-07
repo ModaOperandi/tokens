@@ -36,3 +36,7 @@
   }
   @return $collection;
 }
+
+@function __strip-units__($value) {
+  @return $value / ($value * 0 + 1);
+}
