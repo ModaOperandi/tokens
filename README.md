@@ -17,7 +17,7 @@ This is not a library of React components or a library of icons. It is not "The 
 ## Meta
 
 - **State**: development
-- **Point people**: <del>[@dzucconi](https://github.com/dzucconi)</del> You?
+- **Point people**: [@jmcriffey](https://github.com/jmcriffey)
 
 ## Architecture
 
