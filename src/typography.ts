@@ -85,7 +85,7 @@ export const typography = {
       "line-height": 1.6,
       "letter-spacing": "0.04em"
     },
-    "body1bold": {
+    "bold1": {
       "font-size": "0.8125rem",
       "line-height": 1.6,
       "letter-spacing": "0.1em",

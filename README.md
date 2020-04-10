@@ -158,7 +158,7 @@ breakpoints;
 Accepts the name of a text treatment and, optionally, a font. Returns an object representing the CSS styles for that text treatment.
 
 ```tsx
-type TextTreatment = "display" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "body1" | "body2" | "eyebrow"
+type TextTreatment = "display" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "body1" | "bold1" | "body2" | "eyebrow"
 
 const text: (name: TextTreatment, font?: "serif" | "sans" | "code") => {
     "font-family": string;
