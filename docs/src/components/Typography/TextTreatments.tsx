@@ -62,6 +62,12 @@ export const TextTreatments: React.FC<{ font?: "sans" | "serif" }> = ({
                   text-transform: {treatment["text-transform"]}
                 </>
               )}
+              {"font-weight" in treatment && (
+                <>
+                  <br />
+                  font-weight: {treatment["font-weight"]}
+                </>
+              )}
             </Info>
 
             <Render
@@ -73,6 +79,9 @@ export const TextTreatments: React.FC<{ font?: "sans" | "serif" }> = ({
                 letterSpacing: treatment["letter-spacing"],
                 ...("text-transform" in treatment
                   ? { textTransform: treatment["text-transform"] }
+                  : {}),
+                ...("font-weight" in treatment
+                  ? { fontWeight: treatment["font-weight"] }
                   : {}),
               }}
             >
