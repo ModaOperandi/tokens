@@ -12,7 +12,7 @@ export const colors = {
     "mint": "rgb(227, 251, 226)",
     "money-good": "rgb(4, 108, 0)",
     "fuchsia": "rgb(196, 76, 176)",
-    "dark-fuschia-text": "rgb(180, 60, 160)",
+    "dark-fuchsia": "rgb(180, 60, 160)",
     "klein-blue": "rgb(38, 48, 120)",
     "brick": "rgb(147, 58, 32)",
     "goldenrod": "rgb(186, 145, 46)",
@@ -33,7 +33,7 @@ export const colors = {
     "mint": "rgb(227, 251, 226)",
     "money-good": "rgb(4, 108, 0)",
     "fuchsia": "rgb(196, 76, 176)",
-    "dark-fuschia-text": "rgb(180, 60, 160)"
+    "dark-fuchsia": "rgb(180, 60, 160)"
   },
   "global": {
     "klein-blue": "rgb(38, 48, 120)",
@@ -55,7 +55,7 @@ export const colors = {
     "forest-green": "rgb(0, 55, 40)",
     "cream": "rgb(248, 245, 238)",
     "fuchsia": "rgb(196, 76, 176)",
-    "dark-fuschia-text": "rgb(180, 60, 160)"
+    "dark-fuchsia": "rgb(180, 60, 160)"
   },
   "greyscale": {
     "ink": "rgb(25, 26, 27)",
