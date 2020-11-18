@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.1](https://github.com/ModaOperandi/tokens/compare/v5.3.0...v5.3.1) (2020-11-18)
+
+
+### Bug Fixes
+
+* don't export includePaths ([5daf425](https://github.com/ModaOperandi/tokens/commit/5daf4250091170bf1ce44e1e033328e6d06f59fc))
+
 # [5.3.0](https://github.com/ModaOperandi/tokens/compare/v5.2.0...v5.3.0) (2020-08-26)
 
 
