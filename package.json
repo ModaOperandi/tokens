@@ -20,7 +20,10 @@
     "predeploy": "yarn build && cd docs && yarn install && yarn run build",
     "start": "cd docs && yarn start",
     "semantic-release": "semantic-release",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
@@ -29,21 +32,17 @@
     "@types/node": "^14.0.1",
     "cz-conventional-changelog": "3.3.0",
     "gh-pages": "3.1.0",
-    "husky": "^4.2.1",
+    "husky": "^5.0.9",
     "jest": "^26.0.1",
     "node-sass": "^5.0.0",
     "node-sass-export": "^0.0.7",
+    "pinst": "^2.1.4",
     "semantic-release": "^17.0.1",
     "typescript": "^4.0.2"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "publishConfig": {
