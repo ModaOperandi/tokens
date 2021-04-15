@@ -21,7 +21,7 @@ export const remToUnitlessPx = (value: string) =>
 
 export const color = (name: Color, alpha?: number) => {
   const color = colors.all[name];
-  return alpha != null ? colorString.to.rgb([...(colorString.get.rgb(color) || []), alpha]) : color;
+  return alpha != null ? colorString.to.rgb([...(colorString.get.rgb(color)?.slice(0, 3) || []), alpha]) : color;
 }
 
 export const spacing = (
