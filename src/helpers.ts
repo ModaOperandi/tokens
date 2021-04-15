@@ -1,3 +1,4 @@
+import TinyColor from 'tinycolor2';
 import { colors } from "./colors";
 import { space } from "./space";
 import { typography } from "./typography";
@@ -18,7 +19,13 @@ export const text = (name: TextTreatment, font = "sans" as Font) => {
 export const remToUnitlessPx = (value: string) =>
   parseFloat(value) * parseInt(typography["root-font-size"], 0);
 
-export const color = (name: Color) => colors.all[name];
+export const color = (name: Color, alpha?: number) => {
+  const color = TinyColor(colors.all[name]);
+
+  if (alpha != null) color.setAlpha(alpha);
+
+  return color.toRgbString();
+}
 
 export const spacing = (
   ty: number | string,
