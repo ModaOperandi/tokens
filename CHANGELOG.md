@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.2](https://github.com/ModaOperandi/tokens/compare/v5.4.1...v5.4.2) (2021-04-15)
+
+
+### Bug Fixes
+
+* **colors:** alpha ([b40c866](https://github.com/ModaOperandi/tokens/commit/b40c866f959c2a896582db090e9a6d8786eb60ff))
+
 ## [5.4.1](https://github.com/ModaOperandi/tokens/compare/v5.4.0...v5.4.1) (2021-04-15)
 
 
