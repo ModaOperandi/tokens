@@ -11,6 +11,7 @@
   "style": "lib/assets/stylesheets/_tokens.scss",
   "files": [
     "dist",
+    "src",
     "lib/assets"
   ],
   "scripts": {
