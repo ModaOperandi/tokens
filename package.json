@@ -8,7 +8,7 @@
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "style": "lib/assets/stylesheets/_tokens.scss",
+  "style": "src/index.scss",
   "files": [
     "dist",
     "src",
