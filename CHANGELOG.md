@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.3](https://github.com/ModaOperandi/tokens/compare/v5.4.2...v5.4.3) (2021-04-16)
+
+
+### Bug Fixes
+
+* include src in package ([64ce42b](https://github.com/ModaOperandi/tokens/commit/64ce42b8cc94e336d46115fbc3f895e11a11875b))
+
 ## [5.4.2](https://github.com/ModaOperandi/tokens/compare/v5.4.1...v5.4.2) (2021-04-15)
 
 
