@@ -1,7 +1,7 @@
 // THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
 export const colors = {
   "all": {
-    "black": "rgb(0, 0, 0)",
+    "coal": "rgb(0, 0, 0)",
     "ink": "rgb(25, 26, 27)",
     "cement": "rgb(101, 101, 102)",
     "fog": "rgb(151, 152, 153)",
@@ -59,7 +59,7 @@ export const colors = {
     "dark-fuchsia": "rgb(180, 60, 160)"
   },
   "greyscale": {
-    "black": "rgb(0, 0, 0)",
+    "coal": "rgb(0, 0, 0)",
     "ink": "rgb(25, 26, 27)",
     "cement": "rgb(101, 101, 102)",
     "fog": "rgb(151, 152, 153)",
