@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.1](https://github.com/ModaOperandi/tokens/compare/v5.5.0...v5.5.1) (2021-10-27)
+
+
+### Bug Fixes
+
+* rename black to coal ([b9040c3](https://github.com/ModaOperandi/tokens/commit/b9040c36565e13a6b09aff100f46a78f388c91c8))
+
 # [5.5.0](https://github.com/ModaOperandi/tokens/compare/v5.4.4...v5.5.0) (2021-10-27)
 
 
