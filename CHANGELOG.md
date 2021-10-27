@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.5.0](https://github.com/ModaOperandi/tokens/compare/v5.4.4...v5.5.0) (2021-10-27)
+
+
+### Features
+
+* add black color ([2d16da2](https://github.com/ModaOperandi/tokens/commit/2d16da274fa3cadd4a01c8d8339d72cee926bd8a))
+
 ## [5.4.4](https://github.com/ModaOperandi/tokens/compare/v5.4.3...v5.4.4) (2021-04-16)
 
 
