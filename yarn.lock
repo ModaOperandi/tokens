@@ -1227,9 +1227,9 @@
     "@babel/types" "^7.3.0"
 
 "@types/color-string@^1.5.0":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@types/color-string/-/color-string-1.5.1.tgz#a4ae252447cc53f0a50f6cd095427855117b757b"
-  integrity sha512-liBJRGGkM+Oei1TcmeSj+jS02jrWy0+Iy2VaCovNdtyFP/AGSHGXSi43EK7p9MQH/CsfWpT0lXcCTKuW0o5fEw==
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@types/color-string/-/color-string-1.5.2.tgz#cdb9879b6feca2aa27846adfc3988ef2413ee138"
+  integrity sha512-hAhTmfFYVdzgsKwpC9Flc6h9Do64PhKoNxy3YxE0ze+0LIh3a7TrDQAxiujmANQbDRDgGduEz+9sMS+Zd+J7hA==
 
 "@types/glob@^7.1.1":
   version "7.2.0"
