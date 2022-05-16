@@ -27,7 +27,7 @@
     "postpublish": "pinst --enable"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.0",
+    "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
     "@jedmao/semantic-release-npm-github-config": "^1.0.9",
     "@types/color-string": "^1.5.0",
