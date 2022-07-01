@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.2](https://github.com/ModaOperandi/tokens/compare/v5.5.1...v5.5.2) (2022-07-01)
+
+
+### Bug Fixes
+
+* **storybook:** fix the reference to root package ([81b90cc](https://github.com/ModaOperandi/tokens/commit/81b90cc5664b1037f115a18d9bd96f237884ffa9))
+
 ## [5.5.1](https://github.com/ModaOperandi/tokens/compare/v5.5.0...v5.5.1) (2021-10-27)
 
 
