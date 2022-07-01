@@ -1,3 +1,3 @@
-import * as path from "path";
+import * as path from 'path';
 
-export const includePaths = [path.join(__dirname, "../lib/assets/stylesheets")];
+export const includePaths = [path.join(__dirname, '../lib/assets/stylesheets')];

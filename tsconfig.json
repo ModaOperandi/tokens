@@ -4,7 +4,11 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es6", "es2016", "es2017"],
+    "lib": [
+      "es6",
+      "es2016",
+      "es2017"
+    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -13,12 +17,20 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./dist",
-    "rootDir": "src",
+    "rootDir": ".",
     "sourceMap": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "target": "es5"
   },
-  "include": ["src/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/*.ts",
+    "scripts/*.ts",
+    ".*.js",
+    "*.js",
+    "*.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
