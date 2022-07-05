@@ -17,7 +17,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./dist",
-    "rootDir": ".",
+    "rootDir": "src",
     "sourceMap": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
@@ -25,7 +25,6 @@
   },
   "include": [
     "src/*.ts",
-    "scripts/*.ts",
     ".*.js",
     "*.js",
     "*.d.ts"
