@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.4](https://github.com/ModaOperandi/tokens/compare/v5.5.3...v5.5.4) (2022-09-05)
+
+
+### Bug Fixes
+
+* netlify build ([d163d37](https://github.com/ModaOperandi/tokens/commit/d163d3738110be38946781215846313b97cabe01))
+* predeploy ([3053346](https://github.com/ModaOperandi/tokens/commit/305334685845108d85ca28dd2b8951289808c7b3))
+
 ## [5.5.3](https://github.com/ModaOperandi/tokens/compare/v5.5.2...v5.5.3) (2022-07-05)
 
 
