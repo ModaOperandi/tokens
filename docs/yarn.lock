@@ -1505,7 +1505,7 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@moda/tokens@file:../dist/src":
+"@moda/tokens@file:../dist":
   version "0.0.0"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
