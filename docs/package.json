@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@moda/tokens": "file:../dist/src",
+    "@moda/tokens": "file:../dist",
     "@types/chroma-js": "^2.0.0",
     "@types/node": "^13.11.0",
     "@types/react": "^16.9.32",
