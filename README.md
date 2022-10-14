@@ -185,11 +185,20 @@ const remToUnitlessPx: (value: string) => number;
 
 ##### `color`
 
+Accepts the name of a color and returns back the corresponding rgb(a) value.
+
+```tsx
+type Color = "ink" | "cement" | "fog" | "elephant" | "noise" | "snow" | "strawberry" | "code-red" | "mint" | "money-good" | "fuchsia" | "klein-blue" | "brick" | "goldenrod" | "seafoam" | "coral" | ... 7 more ... | "canary"
+const color: (name: Color, alpha?: number) => string
+```
+
+##### `colorInHex`
+
 Accepts the name of a color and returns back the corresponding hex value.
 
 ```tsx
 type Color = "ink" | "cement" | "fog" | "elephant" | "noise" | "snow" | "strawberry" | "code-red" | "mint" | "money-good" | "fuchsia" | "klein-blue" | "brick" | "goldenrod" | "seafoam" | "coral" | ... 7 more ... | "canary"
-const color: (name: Color) => string
+const colorInHex: (name: Color, alpha?: number) => string
 ```
 
 ##### `spacing`

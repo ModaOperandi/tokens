@@ -27,6 +27,8 @@ export const color = (name: Color, alpha?: number) => {
     : color;
 };
 
+export const colorInHex = (name: Color, alpha?: number): string => colorString.to.hex(colorString.get.rgb(color(name, alpha)));
+
 export const spacing = (
   topY: number | string,
   rightX?: number | string,
