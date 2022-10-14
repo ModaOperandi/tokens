@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/ModaOperandi/tokens/compare/v5.5.4...v5.6.0) (2022-10-14)
+
+
+### Features
+
+* adds js function to retrieve hex for a specific color name ([5460cad](https://github.com/ModaOperandi/tokens/commit/5460cadd8d0627d437b71f886e518551d11acad4))
+
 ## [5.5.4](https://github.com/ModaOperandi/tokens/compare/v5.5.3...v5.5.4) (2022-09-05)
 
 
