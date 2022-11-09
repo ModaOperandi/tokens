@@ -45,7 +45,7 @@
     "gh-pages": "4.0.0",
     "husky": "^8.0.1",
     "jest": "^29.0.2",
-    "node-sass": "^7.0.0",
+    "node-sass": "^8.0.0",
     "node-sass-export": "^0.0.7",
     "pinst": "^3.0.0",
     "prettier": "^2.7.1",
