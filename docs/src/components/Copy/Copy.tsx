@@ -1,15 +1,16 @@
-import React, { useState, useCallback } from "react";
-import styled from "styled-components";
-import useCopyToClipboard from "react-use/lib/useCopyToClipboard";
-import { color, spacing, text } from "@moda/tokens";
+import React, { useState, useCallback, ReactNode } from 'react';
+import styled from 'styled-components';
+import useCopyToClipboard from 'react-use/lib/useCopyToClipboard';
+import { color, spacing, text } from '@moda/tokens';
 
 interface Props {
   copy: string;
+  children?: ReactNode;
 }
 
 enum Mode {
   Resting,
-  Copied,
+  Copied
 }
 
 const Wrapper = styled.div`
@@ -18,14 +19,14 @@ const Wrapper = styled.div`
 
   &::before {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 1;
-    box-shadow: 0 0 0 2px ${color("snow")};
+    box-shadow: 0 0 0 2px ${color('snow')};
     border-radius: 0.125em;
     opacity: 0;
     transition: opacity 100ms;
@@ -45,11 +46,11 @@ const Status = styled.div`
   transform: translate(-50%, -50%);
   padding: ${spacing(1, 2)};
   border-radius: 0.25em;
-  color: ${color("ink")};
-  background-color: ${color("snow")};
+  color: ${color('ink')};
+  background-color: ${color('snow')};
   text-align: center;
   z-index: 2;
-  ${text("body2")}
+  ${text('body2')}
 `;
 
 export const Copy: React.FC<Props> = ({ children, copy, ...rest }) => {
@@ -67,11 +68,7 @@ export const Copy: React.FC<Props> = ({ children, copy, ...rest }) => {
       {children}
 
       {mode === Mode.Copied && (
-        <Status>
-          {state.error
-            ? "Error"
-            : state.value && `Copied <${copy}> to clipboard`}
-        </Status>
+        <Status>{state.error ? 'Error' : state.value && `Copied <${copy}> to clipboard`}</Status>
       )}
     </Wrapper>
   );
