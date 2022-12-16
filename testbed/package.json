@@ -11,6 +11,6 @@
   },
   "devDependencies": {
     "node-sass": "^8.0.0",
-    "parcel": "^2.8.1"
+    "parcel": "^2.8.2"
   }
 }
