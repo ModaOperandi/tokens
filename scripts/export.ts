@@ -1,6 +1,6 @@
 import * as path from 'path';
-import * as sass from 'node-sass';
-import exportSass = require('node-sass-export');
+import * as sass from 'sass';
+const exportSass = require('@moda/node-sass-export');
 
 import { includePaths } from '../src/includePaths';
 
@@ -9,5 +9,3 @@ sass.renderSync({
   includePaths: [...includePaths],
   functions: exportSass('.')
 });
-
-exportSass;

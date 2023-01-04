@@ -5,8 +5,7 @@ $__export__: export(
   "src/colors.ts",
   $colors,
   (
-    prefix: "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
-export const colors = ",
+    prefix: "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const colors = ",
     suffix: ";"
   )
 );
@@ -15,8 +14,7 @@ $__export__: export(
   $typography,
   (
     prefix:
-      "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
-export const typography = ",
+      "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const typography = ",
     suffix: ";"
   )
 );
@@ -24,8 +22,7 @@ $__export__: export(
   "src/space.ts",
   $space,
   (
-    prefix: "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
-export const space = ",
+    prefix: "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const space = ",
     suffix: ";"
   )
 );
@@ -34,8 +31,7 @@ $__export__: export(
   $breakpoints,
   (
     prefix:
-      "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
-export const breakpoints = ",
+      "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const breakpoints = ",
     suffix: ";"
   )
 );
