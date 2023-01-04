@@ -1,7 +1,8 @@
+@use 'sass:math';
 @import "../utilities";
 
 $root-font-size: 16px;
-$root-one-px: 1 / __strip-units__($root-font-size);
+$root-one-px: math.div(1, __strip-units__($root-font-size));
 
 $font-stack-moda-sans: "Moda Operandi Sans", Arial, sans-serif;
 $font-stack-moda-serif: "Moda Operandi Serif", "Times New Roman", Times, serif;

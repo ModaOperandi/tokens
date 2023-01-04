@@ -1,5 +1,5 @@
 const path = require("path");
-const sass = require("node-sass");
+const sass = require("sass");
 
 const compile = css =>
   sass
@@ -32,7 +32,7 @@ body {
 
 `)
     ).toEqual(
-      'body{font-family:"Moda Operandi Serif","Times New Roman",Times,serif;font-size:3.75rem;line-height:1.2;letter-spacing:0;margin:2rem 2rem;background-color:#f0f659}@media (max-width: 62rem){body{font-family:"Moda Operandi Sans",Arial,sans-serif !important;font-size:3.75rem !important;line-height:1.2 !important;letter-spacing:0 !important;background-color:#d7b3d0;font-family:"Moda Operandi Sans",Arial,sans-serif}}'
+      'body{font-family:"Moda Operandi Serif","Times New Roman",Times,serif;font-size:3.75rem;line-height:1.2;letter-spacing:0;margin:2rem 2rem;background-color:#f0f659}@media(max-width: 62rem){body{font-family:"Moda Operandi Sans",Arial,sans-serif !important;font-size:3.75rem !important;line-height:1.2 !important;letter-spacing:0 !important;background-color:#d7b3d0;font-family:"Moda Operandi Sans",Arial,sans-serif}}'
     );
   });
 
@@ -47,7 +47,7 @@ body {
       it("supports named access", () => {
         expect(
           compile(`body { padding: space('1x') space('three-quarter-x') }`)
-        ).toEqual("body{padding:1rem 0.75rem}");
+        ).toEqual("body{padding:1rem .75rem}");
       });
     });
 
@@ -86,7 +86,7 @@ body {
     describe("text", () => {
       it("returns text treatments", () => {
         expect(compile(`body { @include text(eyebrow); }`)).toEqual(
-          'body{font-family:"Moda Operandi Sans",Arial,sans-serif;font-size:.75rem;line-height:1.4;letter-spacing:.1em;text-transform:uppercase}'
+          'body{font-family:"Moda Operandi Sans",Arial,sans-serif;font-size:0.75rem;line-height:1.4;letter-spacing:0.1em;text-transform:uppercase}'
         );
       });
 
@@ -94,7 +94,7 @@ body {
         expect(
           compile(`body { @include text(eyebrow, $important: true); }`)
         ).toEqual(
-          'body{font-family:"Moda Operandi Sans",Arial,sans-serif !important;font-size:.75rem !important;line-height:1.4 !important;letter-spacing:.1em !important;text-transform:uppercase !important}'
+          'body{font-family:"Moda Operandi Sans",Arial,sans-serif !important;font-size:0.75rem !important;line-height:1.4 !important;letter-spacing:0.1em !important;text-transform:uppercase !important}'
         );
       });
 
@@ -104,7 +104,7 @@ body {
             `body { @include text(eyebrow, $important: (font-size, line-height)); }`
           )
         ).toEqual(
-          'body{font-family:"Moda Operandi Sans",Arial,sans-serif;font-size:.75rem !important;line-height:1.4 !important;letter-spacing:.1em;text-transform:uppercase}'
+          'body{font-family:"Moda Operandi Sans",Arial,sans-serif;font-size:0.75rem !important;line-height:1.4 !important;letter-spacing:0.1em;text-transform:uppercase}'
         );
       });
     });
