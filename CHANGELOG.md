@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/ModaOperandi/tokens/compare/v5.6.0...v5.7.0) (2023-01-04)
+
+
+### Features
+
+* move from node-sass to sass ([#761](https://github.com/ModaOperandi/tokens/issues/761)) ([c2c5258](https://github.com/ModaOperandi/tokens/commit/c2c525821a2e26b23941f19db703e95a3dad35b9))
+
 # [5.6.0](https://github.com/ModaOperandi/tokens/compare/v5.5.4...v5.6.0) (2022-10-14)
 
 
