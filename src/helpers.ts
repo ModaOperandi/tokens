@@ -4,7 +4,7 @@ import { space } from './space';
 import { typography } from './typography';
 
 export type Font = keyof typeof typography.fonts;
-export type TextTreatment = keyof typeof typography['text-treatments'];
+export type TextTreatment = keyof (typeof typography)['text-treatments'];
 export type Color = keyof typeof colors.all;
 
 export const text = (name: TextTreatment, font = 'sans' as Font) => {
@@ -27,7 +27,8 @@ export const color = (name: Color, alpha?: number) => {
     : color;
 };
 
-export const colorInHex = (name: Color, alpha?: number): string => colorString.to.hex(colorString.get.rgb(color(name, alpha)));
+export const colorInHex = (name: Color, alpha?: number): string =>
+  colorString.to.hex(colorString.get.rgb(color(name, alpha)));
 
 export const spacing = (
   topY: number | string,
@@ -37,5 +38,5 @@ export const spacing = (
 ) =>
   [topY, rightX, bottom, left].reduce((acc, value) => {
     if (value === undefined) return acc;
-    return [acc, space.scale[value] ?? value].join(' ');
+    return [acc, space.scale[Number(value)] ?? value].join(' ');
   }, '');
