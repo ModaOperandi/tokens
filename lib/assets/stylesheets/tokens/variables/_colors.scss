@@ -1,54 +1,50 @@
 $colors-greyscale: (
-  "coal": #000000,
-  "ink": #191a1b,
-  "cement": #656566,
-  "fog": #979899,
-  "elephant": #cacbcc,
-  "noise": #f2f3f5,
-  "snow": #ffffff,
+  'coal': #000000,
+  'ink': #191a1b,
+  'cement': #656566,
+  'fog': #979899,
+  'elephant': #cacbcc,
+  'noise': #f2f3f5,
+  'snow': #ffffff
 );
 
 $colors-ui: (
-  "strawberry": #fadedd,
-  "code-red": #ee0700,
-  "mint": #e3fbe2,
-  "money-good": #046c00,
-  "fuchsia": #c44cb0,
-  "dark-fuchsia": #b43ca0,
+  'strawberry': #fadedd,
+  'code-red': #ee0700,
+  'mint': #e3fbe2,
+  'money-good': #046c00,
+  'fuchsia': #c44cb0,
+  'dark-fuchsia': #b43ca0,
+  'teal': #006f62,
+  'ivory': #f2e9db
 );
 
 $colors-global: (
-  "klein-blue": #263078,
-  "brick": #933a20,
-  "goldenrod": #ba912e,
-  "seafoam": #b1bfaa,
-  "coral": #ff9279,
+  'klein-blue': #263078,
+  'brick': #933a20,
+  'goldenrod': #ba912e,
+  'seafoam': #b1bfaa,
+  'coral': #ff9279
 );
 
 $colors-womens: (
-  "burnt-orange": #d56b27,
-  "lilac": #d7b3d0,
-  "forest-green": #003728,
-  "cream": #f8f5ee,
-  "fuchsia": #c44cb0,
-  "dark-fuchsia": #b43ca0,
+  'burnt-orange': #d56b27,
+  'lilac': #d7b3d0,
+  'forest-green': #003728,
+  'cream': #f8f5ee,
+  'fuchsia': #c44cb0,
+  'dark-fuchsia': #b43ca0
 );
 
 $colors-mens: (
-  "cornflower-blue": #7f9acf,
-  "moss-green": #68683b,
-  "blush": #f3ded9,
-  "noise": #f2f3f5,
-  "canary": #f0f659,
+  'cornflower-blue': #7f9acf,
+  'moss-green': #68683b,
+  'blush': #f3ded9,
+  'noise': #f2f3f5,
+  'canary': #f0f659
 );
 
-$colors-all: __merge__(
-  $colors-greyscale,
-  $colors-ui,
-  $colors-global,
-  $colors-womens,
-  $colors-mens
-);
+$colors-all: __merge__($colors-greyscale, $colors-ui, $colors-global, $colors-womens, $colors-mens);
 
 $colors: (
   all: $colors-all,
@@ -56,5 +52,5 @@ $colors: (
   global: $colors-global,
   mens: $colors-mens,
   womens: $colors-womens,
-  greyscale: $colors-greyscale,
+  greyscale: $colors-greyscale
 );
