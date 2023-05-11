@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://github.com/ModaOperandi/tokens/compare/v5.7.0...v5.8.0) (2023-05-11)
+
+
+### Features
+
+* **color:** adds ivory and teal ([aba1f97](https://github.com/ModaOperandi/tokens/commit/aba1f9747717c90bb6c68348d1161cffc3001d39))
+
 # [5.7.0](https://github.com/ModaOperandi/tokens/compare/v5.6.0...v5.7.0) (2023-01-04)
 
 
