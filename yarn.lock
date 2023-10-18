@@ -1632,9 +1632,9 @@
     "@babel/types" "^7.3.0"
 
 "@types/color-string@^1.5.0":
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/@types/color-string/-/color-string-1.5.3.tgz#430dd887b4ea2341f258962b76c763ca42ba4afc"
-  integrity sha512-1zi6lMFL2+wHzpcLfODTFN5eQr3wQ4Mzq8dqMwPzPRkh9wKydkr4Bu7772hEBQ+wMhLpgPLwThNMJ2Yq+9BpbA==
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/@types/color-string/-/color-string-1.5.4.tgz#cf5af7bad22c0db64e43b49078a1db0a68e8854b"
+  integrity sha512-FfRPJbKtmmfczTbMgU1pO3dSHUhfmH8HJb/AffvU4WgzmM3RnHp4uT95BS+9PJNpZNJQcDyLnxusFPjzQ0sl7w==
 
 "@types/glob@^7.1.1":
   version "7.2.0"
