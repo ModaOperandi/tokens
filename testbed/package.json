@@ -10,7 +10,7 @@
     "@moda/tokens": "link:.."
   },
   "devDependencies": {
-    "parcel": "^2.10.3",
+    "parcel": "^2.11.0",
     "sass": "^1.69.4"
   }
 }
