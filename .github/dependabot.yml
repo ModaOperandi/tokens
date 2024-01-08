@@ -15,10 +15,3 @@ updates:
     labels:
       - 'dependencies'
     open-pull-requests-limit: 10
-  - package-ecosystem: npm
-    directory: '/testbed'
-    schedule:
-      interval: daily
-    labels:
-      - 'dependencies'
-    open-pull-requests-limit: 10
