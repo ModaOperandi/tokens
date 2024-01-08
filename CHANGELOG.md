@@ -1,3 +1,10 @@
+# [5.9.0](https://github.com/ModaOperandi/tokens/compare/v5.8.0...5.9.0) (2024-01-08)
+
+
+### Features
+
+* migrate to npm ([#1332](https://github.com/ModaOperandi/tokens/issues/1332)) ([c2ed141](https://github.com/ModaOperandi/tokens/commit/c2ed1415cb8f45474d3043236c886265005339be))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See
