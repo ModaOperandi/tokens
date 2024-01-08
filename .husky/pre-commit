@@ -1,5 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn test
-yarn tsc --noEmit
+npm run test
+npm run tsc -- --noEmit

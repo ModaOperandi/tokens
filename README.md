@@ -28,7 +28,7 @@ The source of truth for these values begins in SASS variables. Moda uses SASS (s
 Install the package:
 
 ```sh
-yarn add @moda/tokens --dev
+npm install --save @moda/tokens
 ```
 
 Import the library and utilize the mixins or functions in your SCSS files:
