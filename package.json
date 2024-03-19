@@ -21,7 +21,7 @@
     "export": "tsc scripts/export.ts && node scripts/export.js",
     "postpublish": "pinst --enable",
     "predeploy": "npm run build && cd docs && npm install && npm run build",
-    "prepare": "husky install",
+    "prepare": "husky install && echo ''",
     "prepublishOnly": "pinst --disable",
     "semantic-release": "semantic-release",
     "start": "cd docs && npm run start",
