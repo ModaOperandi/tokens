@@ -1,3 +1,10 @@
+# [5.10.0](https://github.com/ModaOperandi/tokens/compare/5.9.95...5.10.0) (2024-04-11)
+
+
+### Features
+
+* **colors:** persian-blue ([#1431](https://github.com/ModaOperandi/tokens/issues/1431)) ([4a87709](https://github.com/ModaOperandi/tokens/commit/4a877099be7a6613546dc181395605f1a25e7ebc))
+
 ## [5.9.95](https://github.com/ModaOperandi/tokens/compare/5.9.94...5.9.95) (2024-04-10)
 
 ## [5.9.94](https://github.com/ModaOperandi/tokens/compare/5.9.93...5.9.94) (2024-04-10)
