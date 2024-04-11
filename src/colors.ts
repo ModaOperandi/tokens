@@ -17,6 +17,7 @@ export const colors = {
     "teal": "rgb(0, 111, 98)",
     "ivory": "rgb(242, 233, 219)",
     "klein-blue": "rgb(38, 48, 120)",
+    "persian-blue": "rgb(30, 34, 170)",
     "brick": "rgb(147, 58, 32)",
     "goldenrod": "rgb(186, 145, 46)",
     "seafoam": "rgb(177, 191, 170)",
@@ -42,6 +43,7 @@ export const colors = {
   },
   "global": {
     "klein-blue": "rgb(38, 48, 120)",
+    "persian-blue": "rgb(30, 34, 170)",
     "brick": "rgb(147, 58, 32)",
     "goldenrod": "rgb(186, 145, 46)",
     "seafoam": "rgb(177, 191, 170)",
