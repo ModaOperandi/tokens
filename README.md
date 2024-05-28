@@ -50,9 +50,9 @@ import { color } from "@moda/tokens";
 color("ink");
 ```
 
-**Netlify deploy config** is located here: https://github.com/ModaOperandi/tokens/blob/main/netlify.toml 
+- **Netlify deploy config** is located here: https://github.com/ModaOperandi/tokens/blob/main/netlify.toml 
 
-**Netlify site overview**: https://app.netlify.com/sites/moda-tokens/deploys
+- **Netlify site overview**: https://app.netlify.com/sites/moda-tokens/overview
 
 (settings specified in netlify.toml override any corresponding settings in the Netlify UI)
 
