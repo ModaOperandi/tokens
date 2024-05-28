@@ -1,0 +1,15 @@
+[build]
+  base = "/"
+  publish = "docs/build"
+  command = "yarn predeploy"
+
+[functions]
+  directory = "netlify/functions"
+
+[context.production]
+  publish = "docs/build"
+  command = "yarn predeploy"
+
+[context.deploy-preview]
+  publish = "docs/build"
+  command = "yarn predeploy"
