@@ -2,7 +2,7 @@
 
 [![CircleCI](https://img.shields.io/circleci/build/github/ModaOperandi/tokens)](https://circleci.com/gh/ModaOperandi/tokens) [![npm](https://img.shields.io/npm/v/@moda/tokens)](https://www.npmjs.com/package/@moda/tokens)
 
-Been here before? Visit the [click-to-copy](https://moda-tokens.netlify.com/) documentation. First time? Keep reading.
+Been here before? Visit the [click-to-copy](https://moda-tokens.netlify.app/) documentation. First time? Keep reading.
 
 ## What is this?
 
