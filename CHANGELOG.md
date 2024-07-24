@@ -1,3 +1,5 @@
+## [5.10.59](https://github.com/ModaOperandi/tokens/compare/5.10.58...5.10.59) (2024-07-24)
+
 ## [5.10.58](https://github.com/ModaOperandi/tokens/compare/5.10.57...5.10.58) (2024-07-23)
 
 ## [5.10.57](https://github.com/ModaOperandi/tokens/compare/5.10.56...5.10.57) (2024-07-23)
