@@ -1,3 +1,6 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:string";
 @use 'sass:math';
 
 /// Returns the named value of a map. Throws an error if it does not exist.
@@ -7,9 +10,9 @@
 /// @param {string} $key
 ///   The key to access
 /// @return {any} keyed value of `$map`
-@function __fetch__($map, $key) {
-  @if map-has-key($map, quote($key)) {
-    @return map-get($map, quote($key));
+@function fetch($map, $key) {
+  @if map.has-key($map, string.quote($key)) {
+    @return map.get($map, string.quote($key));
   } @else {
     @error "ERROR: the key: '#{$key}' is not defined";
   }
@@ -22,8 +25,8 @@
 /// @param {integer (unitless)} $index
 ///   The 0-based index to access
 /// @return {any} positional value of `$list`
-@function __access__($list, $index) {
-  @return nth($list, $index + 1);
+@function access($list, $index) {
+  @return list.nth($list, $index + 1);
 }
 
 /// Merge multiple maps
@@ -31,14 +34,14 @@
 /// @param {maps} $maps
 ///   The list of maps to merge
 /// @return {map} merged map
-@function __merge__($maps...) {
+@function merge($maps...) {
   $collection: ();
   @each $map in $maps {
-    $collection: map-merge($collection, $map);
+    $collection: map.merge($collection, $map);
   }
   @return $collection;
 }
 
-@function __strip-units__($value) {
+@function strip-units($value) {
   @return math.div($value, ($value * 0 + 1));
 }

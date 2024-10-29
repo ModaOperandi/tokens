@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { spacing, color, typography, text } from "@moda/tokens";
-import { TextTreatments } from "./TextTreatments";
-import { ValueTable } from "./ValueTable";
+import React from 'react';
+import styled from 'styled-components';
+import { spacing, color, typography, text } from '@moda/tokens';
+import { TextTreatments } from './TextTreatments';
+import { ValueTable } from './ValueTable';
 
 const Container = styled.div`
   padding: ${spacing(5)};
-  color: ${color("ink")};
-  background-color: ${color("seafoam")};
+  color: ${color('ink')};
+  background-color: ${color('seafoam')};
 `;
 
 const Rule = styled.hr`
@@ -19,7 +19,7 @@ const Rule = styled.hr`
 `;
 
 const H3 = styled.h3`
-  ${text("h6")}
+  ${text('h6')}
   margin-bottom: ${spacing(6)};
 `;
 
@@ -29,33 +29,24 @@ export const Typography: React.FC = () => (
 
     <Rule />
 
-    <TextTreatments font="serif" />
+    <TextTreatments font='serif' />
 
     <Rule />
 
     <H3>Font Size</H3>
 
-    <ValueTable
-      getter="__dangerously-get-font-size__"
-      values={typography["font-scale"]}
-    />
+    <ValueTable getter='dangerously-get-font-size' values={typography['font-scale']} />
 
     <Rule />
 
     <H3>Line Height</H3>
 
-    <ValueTable
-      getter="__dangerously-get-line-height__"
-      values={typography["line-heights"]}
-    />
+    <ValueTable getter='dangerously-get-line-height' values={typography['line-heights']} />
 
     <Rule />
 
     <H3>Letter Spacing</H3>
 
-    <ValueTable
-      getter="__dangerously-get-letter-spacing__"
-      values={typography["letter-spacing"]}
-    />
+    <ValueTable getter='dangerously-get-letter-spacing' values={typography['letter-spacing']} />
   </Container>
 );

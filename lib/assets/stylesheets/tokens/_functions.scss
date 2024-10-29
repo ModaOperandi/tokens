@@ -1,12 +1,15 @@
-@import "utilities";
-@import "variables";
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:meta';
+@use 'utilities';
+@use 'variables';
 
 @function font-family($key) {
-  @return __fetch__(map-get($typography, "fonts"), $key);
+  @return utilities.fetch(map.get(variables.$typography, 'fonts'), $key);
 }
 
 @function color($key, $opacity: null) {
-  $value: __fetch__(map-get($colors, "all"), $key);
+  $value: utilities.fetch(map.get(variables.$colors, 'all'), $key);
   @if $opacity {
     @return rgba($value, $opacity);
   } @else {
@@ -14,40 +17,40 @@
   }
 }
 
-// `__dangerously-get-` functions are named this way to discourage their use.
+// `dangerously-get-` functions are named this way to discourage their use.
 // Users of this library should always be utilizing codified text treatments via the `text` mixin.
-@function __dangerously-get-letter-spacing__($index) {
-  @return __access__(map-get($typography, "letter-spacing"), $index);
+@function dangerously-get-letter-spacing($index) {
+  @return utilities.access(map.get(variables.$typography, 'letter-spacing'), $index);
 }
 
-@function __dangerously-get-line-height__($index) {
-  @return __access__(map-get($typography, "line-heights"), $index);
+@function dangerously-get-line-height($index) {
+  @return utilities.access(map.get(variables.$typography, 'line-heights'), $index);
 }
 
-@function __dangerously-get-font-size__($index) {
-  @return __access__(map-get($typography, "font-scale"), $index);
+@function dangerously-get-font-size($index) {
+  @return utilities.access(map.get(variables.$typography, 'font-scale'), $index);
 }
 
 @function space($indexOrKey) {
-  @if type-of($indexOrKey) != number {
-    @return __fetch__(map-get($space, "map"), $indexOrKey);
+  @if meta.type-of($indexOrKey) != number {
+    @return utilities.fetch(map.get(variables.$space, 'map'), $indexOrKey);
   }
 
-  @return __access__(map-get($space, "scale"), $indexOrKey);
+  @return utilities.access(map.get(variables.$space, 'scale'), $indexOrKey);
 }
 
 @function spacing($indices...) {
   $spacing: ();
 
   @each $index in $indices {
-    $spacing: append($spacing, space($index));
+    $spacing: list.append($spacing, space($index));
   }
 
   @return $spacing;
 }
 
 @function text-treatment($key) {
-  @return __fetch__(map-get($typography, "text-treatments"), $key);
+  @return utilities.fetch(map.get(variables.$typography, 'text-treatments'), $key);
 }
 
 /// @param {prop (string)} $prop
@@ -56,12 +59,12 @@
 ///   Either list of properties
 /// @return {string | null} declares !important or not
 @function important($important: false, $prop: null) {
-  @if type-of($important) == bool {
+  @if meta.type-of($important) == bool {
     @return if($important, !important, null);
   }
 
-  @if type-of($important) == list {
-    @return if(index($important, $prop), !important, null);
+  @if meta.type-of($important) == list {
+    @return if(list.index($important, $prop), !important, null);
   }
 
   @return null;
