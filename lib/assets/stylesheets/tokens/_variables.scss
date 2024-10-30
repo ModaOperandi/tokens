@@ -1,4 +1,4 @@
-@import "variables/typography";
-@import "variables/colors";
-@import "variables/space";
-@import "variables/breakpoints";
+@forward 'variables/typography';
+@forward 'variables/colors';
+@forward 'variables/space';
+@forward 'variables/breakpoints';

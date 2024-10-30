@@ -1,37 +1,35 @@
-@import "../lib/assets/stylesheets/tokens";
+@use '../lib/assets/stylesheets/tokens';
 
 // Exports out any SASS maps to a TypeScript files
 $__export__: export(
-  "src/colors.ts",
-  $colors,
+  'src/colors.ts',
+  tokens.$colors,
   (
-    prefix: "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const colors = ",
-    suffix: ";"
+    prefix: '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const colors = ',
+    suffix: ';'
   )
 );
 $__export__: export(
-  "src/typography.ts",
-  $typography,
+  'src/typography.ts',
+  tokens.$typography,
   (
-    prefix:
-      "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const typography = ",
-    suffix: ";"
+    prefix: '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const typography = ',
+    suffix: ';'
   )
 );
 $__export__: export(
-  "src/space.ts",
-  $space,
+  'src/space.ts',
+  tokens.$space,
   (
-    prefix: "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const space = ",
-    suffix: ";"
+    prefix: '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const space = ',
+    suffix: ';'
   )
 );
 $__export__: export(
-  "src/breakpoints.ts",
-  $breakpoints,
+  'src/breakpoints.ts',
+  tokens.$breakpoints,
   (
-    prefix:
-      "// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const breakpoints = ",
-    suffix: ";"
+    prefix: '// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\a export const breakpoints = ',
+    suffix: ';'
   )
 );

@@ -1,3 +1,5 @@
+@use "../utilities";
+
 $colors-greyscale: (
   'coal': #000000,
   'ink': #191a1b,
@@ -45,7 +47,7 @@ $colors-mens: (
   'canary': #f0f659
 );
 
-$colors-all: __merge__($colors-greyscale, $colors-ui, $colors-global, $colors-womens, $colors-mens);
+$colors-all: utilities.merge($colors-greyscale, $colors-ui, $colors-global, $colors-womens, $colors-mens);
 
 $colors: (
   all: $colors-all,

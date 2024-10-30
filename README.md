@@ -34,23 +34,23 @@ npm install --save @moda/tokens
 Import the library and utilize the mixins or functions in your SCSS files:
 
 ```scss
-@import "~@moda/tokens";
+@use '~@moda/tokens';
 
 // Use functions to access values:
 p {
-  @include text(body1);
+  @include tokens.text(body1);
 }
 ```
 
 Import the library and utilize the values in TypeScript:
 
 ```tsx
-import { color } from "@moda/tokens";
+import { color } from '@moda/tokens';
 
-color("ink");
+color('ink');
 ```
 
-- **Netlify deploy config** is located here: https://github.com/ModaOperandi/tokens/blob/main/netlify.toml 
+- **Netlify deploy config** is located here: https://github.com/ModaOperandi/tokens/blob/main/netlify.toml
 
 - **Netlify site overview**: https://app.netlify.com/sites/moda-tokens/overview
 
@@ -96,15 +96,15 @@ Refer to the files in the [variables directory](https://github.com/ModaOperandi/
 
 Returns the font-stack associated with the key.
 
-#### `__dangerously-get-letter-spacing__($index)`
+#### `dangerously-get-letter-spacing($index)`
 
 Returns the letter-spacing associated with the index.
 
-#### `__dangerously-get-line-height__($index)`
+#### `dangerously-get-line-height($index)`
 
 Returns the line-height associated with the index.
 
-#### `__dangerously-get-font-size__($index)`
+#### `dangerously-get-font-size($index)`
 
 Returns the font-size associated with the index.
 
