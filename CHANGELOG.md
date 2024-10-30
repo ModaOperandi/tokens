@@ -1,3 +1,18 @@
+# [6.0.0](https://github.com/ModaOperandi/tokens/compare/5.10.105...6.0.0) (2024-10-30)
+
+
+### Features
+
+* **sass:** fix deprecation warnings ([#1579](https://github.com/ModaOperandi/tokens/issues/1579)) ([56d8217](https://github.com/ModaOperandi/tokens/commit/56d8217f6bbda5e29065b4b0c57744d2f548127e))
+
+
+### BREAKING CHANGES
+
+* **sass:** Importing this package with `@import` will no longer work. Users will have to
+change to the `@use` syntax.
+
+ECOM-4074
+
 ## [5.10.105](https://github.com/ModaOperandi/tokens/compare/5.10.104...5.10.105) (2024-10-29)
 
 ## [5.10.104](https://github.com/ModaOperandi/tokens/compare/5.10.103...5.10.104) (2024-10-29)
