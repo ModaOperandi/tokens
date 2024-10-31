@@ -12,7 +12,8 @@
   "files": [
     "dist",
     "src",
-    "lib/assets"
+    "lib/assets",
+    "index.scss"
   ],
   "scripts": {
     "build": "npm run clean && npm run export && tsc",
