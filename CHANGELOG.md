@@ -1,3 +1,10 @@
+# [6.1.0](https://github.com/ModaOperandi/tokens/compare/6.0.3...6.1.0) (2024-10-31)
+
+
+### Features
+
+* index.scss ([696db59](https://github.com/ModaOperandi/tokens/commit/696db5995ca8f6282c973d66335d2fc6b1492564))
+
 ## [6.0.3](https://github.com/ModaOperandi/tokens/compare/6.0.2...6.0.3) (2024-10-30)
 
 ## [6.0.2](https://github.com/ModaOperandi/tokens/compare/6.0.1...6.0.2) (2024-10-30)
