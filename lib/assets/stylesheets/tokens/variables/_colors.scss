@@ -1,4 +1,4 @@
-@use "../utilities";
+@use '../utilities';
 
 $colors-greyscale: (
   'coal': #000000,
@@ -18,7 +18,8 @@ $colors-ui: (
   'fuchsia': #c44cb0,
   'dark-fuchsia': #b43ca0,
   'teal': #006f62,
-  'ivory': #f2e9db
+  'ivory': #f2e9db,
+  'chatelle': #d5c2d8
 );
 
 $colors-global: (
@@ -47,7 +48,13 @@ $colors-mens: (
   'canary': #f0f659
 );
 
-$colors-all: utilities.merge($colors-greyscale, $colors-ui, $colors-global, $colors-womens, $colors-mens);
+$colors-all: utilities.merge(
+  $colors-greyscale,
+  $colors-ui,
+  $colors-global,
+  $colors-womens,
+  $colors-mens
+);
 
 $colors: (
   all: $colors-all,

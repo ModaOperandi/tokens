@@ -16,6 +16,7 @@ export const colors = {
     "dark-fuchsia": "rgb(180, 60, 160)",
     "teal": "rgb(0, 111, 98)",
     "ivory": "rgb(242, 233, 219)",
+    "chatelle": "rgb(213, 194, 216)",
     "klein-blue": "rgb(38, 48, 120)",
     "persian-blue": "rgb(30, 34, 170)",
     "brick": "rgb(147, 58, 32)",
@@ -39,7 +40,8 @@ export const colors = {
     "fuchsia": "rgb(196, 76, 176)",
     "dark-fuchsia": "rgb(180, 60, 160)",
     "teal": "rgb(0, 111, 98)",
-    "ivory": "rgb(242, 233, 219)"
+    "ivory": "rgb(242, 233, 219)",
+    "chatelle": "rgb(213, 194, 216)"
   },
   "global": {
     "klein-blue": "rgb(38, 48, 120)",
