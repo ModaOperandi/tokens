@@ -1,3 +1,10 @@
+# [6.2.0](https://github.com/ModaOperandi/tokens/compare/6.1.10...6.2.0) (2024-11-13)
+
+
+### Features
+
+* **colors:** chatelle ([1a4b9ab](https://github.com/ModaOperandi/tokens/commit/1a4b9ab89da0f654fadcb311ff8e92cd0c623f43))
+
 ## [6.1.10](https://github.com/ModaOperandi/tokens/compare/6.1.9...6.1.10) (2024-11-12)
 
 ## [6.1.9](https://github.com/ModaOperandi/tokens/compare/6.1.8...6.1.9) (2024-11-05)
