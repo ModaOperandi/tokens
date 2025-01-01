@@ -1,3 +1,5 @@
+## [6.2.38](https://github.com/ModaOperandi/tokens/compare/6.2.37...6.2.38) (2025-01-01)
+
 ## [6.2.37](https://github.com/ModaOperandi/tokens/compare/6.2.36...6.2.37) (2024-12-31)
 
 ## [6.2.36](https://github.com/ModaOperandi/tokens/compare/6.2.35...6.2.36) (2024-12-31)
