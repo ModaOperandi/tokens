@@ -67,6 +67,6 @@
     "access": "public"
   },
   "dependencies": {
-    "color-string": "^1.9.1"
+    "color-string": "^2.0.0"
   }
 }
