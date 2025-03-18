@@ -1,4 +1,4 @@
-import * as colorString from 'color-string';
+import colorString from 'color-string';
 import { colors } from './colors';
 import { space } from './space';
 import { typography } from './typography';
@@ -21,14 +21,16 @@ export const remToUnitlessPx = (value: string) =>
 
 export const color = (name: Color, alpha?: number) => {
   const color = colors.all[name];
-  return alpha != null
-    ? // eslint-disable-next-line @typescript-eslint/no-magic-numbers
-      colorString.to.rgb([...(colorString.get.rgb(color)?.slice(0, 3) || []), alpha])
-    : color;
+  const [red, green, blue] = colorString.get.rgb(color) ?? [];
+
+  return alpha != null ? colorString.to.rgb(red, green, blue, alpha) : color;
 };
 
-export const colorInHex = (name: Color, alpha?: number): string =>
-  colorString.to.hex(colorString.get.rgb(color(name, alpha)));
+export const colorInHex = (name: Color, alpha?: number): string => {
+  const [red, green, blue] = colorString.get.rgb(color(name, alpha) ?? '') ?? [];
+
+  return colorString.to.hex(red, green, blue, alpha) ?? '';
+};
 
 export const spacing = (
   topY: number | string,
