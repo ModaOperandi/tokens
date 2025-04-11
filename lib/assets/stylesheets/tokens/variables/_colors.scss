@@ -48,12 +48,26 @@ $colors-mens: (
   'canary': #f0f659
 );
 
+$colors-clubmoda: (
+  'deep-marina': #586d89,
+  'coastal-haze': #9bacc0,
+  'sea-glass': #b6c5c2,
+  'mint-surf': #cfe6d5,
+  'lemon-veil': #faefbd,
+  'beach-honey': #e9c688,
+  'amber-glow': #f1b352,
+  'sunset-spark': #e0653a,
+  'terra-heat': #c84f34,
+  'copper-clay': #bb5634
+);
+
 $colors-all: utilities.merge(
   $colors-greyscale,
   $colors-ui,
   $colors-global,
   $colors-womens,
-  $colors-mens
+  $colors-mens,
+  $colors-clubmoda
 );
 
 $colors: (
@@ -62,5 +76,6 @@ $colors: (
   global: $colors-global,
   mens: $colors-mens,
   womens: $colors-womens,
-  greyscale: $colors-greyscale
+  greyscale: $colors-greyscale,
+  clubmoda: $colors-clubmoda
 );

@@ -30,7 +30,17 @@ export const colors = {
     "cornflower-blue": "rgb(127, 154, 207)",
     "moss-green": "rgb(104, 104, 59)",
     "blush": "rgb(243, 222, 217)",
-    "canary": "rgb(240, 246, 89)"
+    "canary": "rgb(240, 246, 89)",
+    "deep-marina": "rgb(88, 109, 137)",
+    "coastal-haze": "rgb(155, 172, 192)",
+    "sea-glass": "rgb(182, 197, 194)",
+    "mint-surf": "rgb(207, 230, 213)",
+    "lemon-veil": "rgb(250, 239, 189)",
+    "beach-honey": "rgb(233, 198, 136)",
+    "amber-glow": "rgb(241, 179, 82)",
+    "sunset-spark": "rgb(224, 101, 58)",
+    "terra-heat": "rgb(200, 79, 52)",
+    "copper-clay": "rgb(187, 86, 52)"
   },
   "ui": {
     "strawberry": "rgb(250, 222, 221)",
@@ -74,5 +84,17 @@ export const colors = {
     "elephant": "rgb(202, 203, 204)",
     "noise": "rgb(242, 243, 245)",
     "snow": "rgb(255, 255, 255)"
+  },
+  "clubmoda": {
+    "deep-marina": "rgb(88, 109, 137)",
+    "coastal-haze": "rgb(155, 172, 192)",
+    "sea-glass": "rgb(182, 197, 194)",
+    "mint-surf": "rgb(207, 230, 213)",
+    "lemon-veil": "rgb(250, 239, 189)",
+    "beach-honey": "rgb(233, 198, 136)",
+    "amber-glow": "rgb(241, 179, 82)",
+    "sunset-spark": "rgb(224, 101, 58)",
+    "terra-heat": "rgb(200, 79, 52)",
+    "copper-clay": "rgb(187, 86, 52)"
   }
 };
