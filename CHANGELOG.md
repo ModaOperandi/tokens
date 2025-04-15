@@ -1,3 +1,10 @@
+## [6.3.4](https://github.com/ModaOperandi/tokens/compare/6.3.3...6.3.4) (2025-04-15)
+
+
+### Bug Fixes
+
+* esModuleInterop ([03b25d0](https://github.com/ModaOperandi/tokens/commit/03b25d0f120b801d99dcc249914e7819fa81fa7d))
+
 ## [6.3.3](https://github.com/ModaOperandi/tokens/compare/6.3.2...6.3.3) (2025-04-15)
 
 ## [6.3.2](https://github.com/ModaOperandi/tokens/compare/6.3.1...6.3.2) (2025-04-15)
