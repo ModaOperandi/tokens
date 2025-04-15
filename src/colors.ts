@@ -17,6 +17,9 @@ export const colors = {
     "teal": "rgb(0, 111, 98)",
     "ivory": "rgb(242, 233, 219)",
     "chatelle": "rgb(213, 194, 216)",
+    "edgewater": "rgb(198, 225, 209)",
+    "waikawa-gray": "rgb(86, 107, 136)",
+    "tuscany": "rgb(186, 83, 44)",
     "klein-blue": "rgb(38, 48, 120)",
     "persian-blue": "rgb(30, 34, 170)",
     "brick": "rgb(147, 58, 32)",
@@ -41,7 +44,10 @@ export const colors = {
     "dark-fuchsia": "rgb(180, 60, 160)",
     "teal": "rgb(0, 111, 98)",
     "ivory": "rgb(242, 233, 219)",
-    "chatelle": "rgb(213, 194, 216)"
+    "chatelle": "rgb(213, 194, 216)",
+    "edgewater": "rgb(198, 225, 209)",
+    "waikawa-gray": "rgb(86, 107, 136)",
+    "tuscany": "rgb(186, 83, 44)"
   },
   "global": {
     "klein-blue": "rgb(38, 48, 120)",
