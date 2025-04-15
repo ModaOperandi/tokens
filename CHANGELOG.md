@@ -1,3 +1,10 @@
+# [6.3.0](https://github.com/ModaOperandi/tokens/compare/6.2.132...6.3.0) (2025-04-15)
+
+
+### Features
+
+* new club moda colors ([#1752](https://github.com/ModaOperandi/tokens/issues/1752)) ([8175e09](https://github.com/ModaOperandi/tokens/commit/8175e09e3897e316fe40a419d55ef8d9244ef2b1))
+
 ## [6.2.132](https://github.com/ModaOperandi/tokens/compare/6.2.131...6.2.132) (2025-04-14)
 
 ## [6.2.131](https://github.com/ModaOperandi/tokens/compare/6.2.130...6.2.131) (2025-04-10)
