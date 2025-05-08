@@ -1,3 +1,10 @@
+# [6.4.0](https://github.com/ModaOperandi/tokens/compare/6.3.25...6.4.0) (2025-05-08)
+
+
+### Features
+
+* upgrade to node 22.15.0 ([#1779](https://github.com/ModaOperandi/tokens/issues/1779)) ([0eda043](https://github.com/ModaOperandi/tokens/commit/0eda0439f903ec9746e6ab3ec178880cd0be35dd))
+
 ## [6.3.25](https://github.com/ModaOperandi/tokens/compare/6.3.24...6.3.25) (2025-05-08)
 
 ## [6.3.24](https://github.com/ModaOperandi/tokens/compare/6.3.23...6.3.24) (2025-05-08)
