@@ -1,3 +1,10 @@
+# [6.5.0](https://github.com/ModaOperandi/tokens/compare/6.4.84...6.5.0) (2025-08-29)
+
+
+### Features
+
+* **ECOM-4597:** add new silver color ([b35bdb6](https://github.com/ModaOperandi/tokens/commit/b35bdb6f6339be03ba6b6681c79eb6bd35999d9c))
+
 ## [6.4.84](https://github.com/ModaOperandi/tokens/compare/6.4.83...6.4.84) (2025-08-28)
 
 ## [6.4.83](https://github.com/ModaOperandi/tokens/compare/6.4.82...6.4.83) (2025-08-27)
