@@ -1,3 +1,10 @@
+# [6.6.0](https://github.com/ModaOperandi/tokens/compare/6.5.37...6.6.0) (2025-10-14)
+
+
+### Features
+
+* updated Brick hex ([74d54d2](https://github.com/ModaOperandi/tokens/commit/74d54d25af8c48fec96b7151324bf9f1e6a7a3db))
+
 ## [6.5.37](https://github.com/ModaOperandi/tokens/compare/6.5.36...6.5.37) (2025-10-14)
 
 ## [6.5.36](https://github.com/ModaOperandi/tokens/compare/6.5.35...6.5.36) (2025-10-14)
