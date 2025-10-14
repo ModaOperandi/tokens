@@ -8,6 +8,7 @@ export const colors = {
     "elephant": "rgb(202, 203, 204)",
     "noise": "rgb(242, 243, 245)",
     "snow": "rgb(255, 255, 255)",
+    "silver": "rgb(217, 217, 217)",
     "strawberry": "rgb(250, 222, 221)",
     "code-red": "rgb(238, 7, 0)",
     "mint": "rgb(227, 251, 226)",
@@ -22,7 +23,7 @@ export const colors = {
     "tuscany": "rgb(186, 83, 44)",
     "klein-blue": "rgb(38, 48, 120)",
     "persian-blue": "rgb(30, 34, 170)",
-    "brick": "rgb(147, 58, 32)",
+    "brick": "rgb(158, 48, 57)",
     "goldenrod": "rgb(186, 145, 46)",
     "seafoam": "rgb(177, 191, 170)",
     "coral": "rgb(255, 146, 121)",
@@ -52,7 +53,7 @@ export const colors = {
   "global": {
     "klein-blue": "rgb(38, 48, 120)",
     "persian-blue": "rgb(30, 34, 170)",
-    "brick": "rgb(147, 58, 32)",
+    "brick": "rgb(158, 48, 57)",
     "goldenrod": "rgb(186, 145, 46)",
     "seafoam": "rgb(177, 191, 170)",
     "coral": "rgb(255, 146, 121)"
@@ -79,6 +80,7 @@ export const colors = {
     "fog": "rgb(151, 152, 153)",
     "elephant": "rgb(202, 203, 204)",
     "noise": "rgb(242, 243, 245)",
-    "snow": "rgb(255, 255, 255)"
+    "snow": "rgb(255, 255, 255)",
+    "silver": "rgb(217, 217, 217)"
   }
 };
