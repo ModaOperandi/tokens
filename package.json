@@ -1,6 +1,6 @@
 {
   "name": "@moda/tokens",
-  "version": "6.6.6",
+  "version": "6.6.7",
   "description": "Constant values for modaoperandi.com",
   "repository": "git@github.com:ModaOperandi/tokens.git",
   "author": "Moda Operandi",
