@@ -60,11 +60,11 @@
 /// @return {string | null} declares !important or not
 @function important($important: false, $prop: null) {
   @if meta.type-of($important) == bool {
-    @return if($important, !important, null);
+    @return if(sass($important): !important; else: null);
   }
 
   @if meta.type-of($important) == list {
-    @return if(list.index($important, $prop), !important, null);
+    @return if(sass(list.index($important, $prop)): !important; else: null);
   }
 
   @return null;
