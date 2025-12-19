@@ -1,3 +1,10 @@
+## [6.6.38](https://github.com/ModaOperandi/tokens/compare/6.6.37...6.6.38) (2025-12-19)
+
+
+### Bug Fixes
+
+* **sass:** deprecation warning for if() ([4fec12d](https://github.com/ModaOperandi/tokens/commit/4fec12d47ce437e2f05fd7b9a0dacc6819e7d7e6))
+
 ## [6.6.37](https://github.com/ModaOperandi/tokens/compare/6.6.36...6.6.37) (2025-12-09)
 
 ## [6.6.36](https://github.com/ModaOperandi/tokens/compare/6.6.35...6.6.36) (2025-12-09)
