@@ -1,3 +1,10 @@
+## [6.6.155](https://github.com/ModaOperandi/tokens/compare/6.6.154...6.6.155) (2026-09-23)
+
+
+### Bug Fixes
+
+* swap eslint-plugin-import for import-x, add missing @eslint/js dep ([119d543](https://github.com/ModaOperandi/tokens/commit/119d5432537be73cc305862ac37630c5964c0787))
+
 ## [6.6.154](https://github.com/ModaOperandi/tokens/compare/6.6.153...6.6.154) (2026-09-22)
 
 ## [6.6.153](https://github.com/ModaOperandi/tokens/compare/6.6.152...6.6.153) (2026-09-22)
