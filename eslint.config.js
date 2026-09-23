@@ -5,7 +5,11 @@ const prettierRecommended = require('eslint-plugin-prettier/recommended');
 const globals = require('globals');
 const noLoops = require('eslint-plugin-no-loops');
 const typescriptEslint = require('@typescript-eslint/eslint-plugin');
-const importPlugin = require('eslint-plugin-import');
+// eslint-plugin-import has no released version supporting ESLint 10 (its
+// peerDependencies cap at ^9); eslint-plugin-import-x is the actively
+// maintained fork that does, and mirrors the same import/* rule set, so we
+// keep registering it under the 'import' plugin key to avoid renaming rules.
+const importPlugin = require('eslint-plugin-import-x');
 
 module.exports = [
   js.configs.recommended,
