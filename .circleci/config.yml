@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 defaults: &defaults
   docker:
     - image: 'cimg/node:24.16.0'
@@ -33,7 +33,6 @@ jobs:
           name: test
           command: npm run test
 workflows:
-  version: 2
   pull_request:
     jobs:
       - test:
