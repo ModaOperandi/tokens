@@ -1,6 +1,6 @@
 {
   "name": "@moda/tokens",
-  "version": "6.6.130",
+  "version": "6.6.167",
   "description": "Constant values for modaoperandi.com",
   "repository": "git@github.com:ModaOperandi/tokens.git",
   "author": "Moda Operandi",
@@ -16,10 +16,10 @@
     "index.scss"
   ],
   "scripts": {
-    "build": "npm run clean && npm run export && tsc",
+    "build": "npm run clean && npm run export && node ./node_modules/typescript/bin/tsc --ignoreDeprecations 6.0 && npm run typeCheck",
     "clean": "rm -rf ./dist",
     "commitlint": "commitlint",
-    "export": "tsc scripts/export.ts && node scripts/export.js",
+    "export": "node ./node_modules/typescript/bin/tsc --ignoreConfig --types node --module commonjs --target es5 --ignoreDeprecations 6.0 scripts/export.ts && node scripts/export.js",
     "postpublish": "pinst --enable",
     "predeploy": "npm run build && cd docs && npm install && npm run build",
     "prepare": "husky && echo ''",
@@ -27,8 +27,9 @@
     "semantic-release": "semantic-release",
     "start": "cd docs && npm run start",
     "test": "jest",
-    "tsc": "tsc",
-    "lint": "eslint src"
+    "tsc": "node ./node_modules/@typescript/native/bin/tsc --noEmit --target es2015 --module nodenext --moduleResolution nodenext",
+    "lint": "eslint src",
+    "typeCheck": "node ./node_modules/@typescript/native/bin/tsc --noEmit --target es2015 --module nodenext --moduleResolution nodenext"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.0.0",
@@ -37,12 +38,13 @@
     "@types/color-string": "^1.5.5",
     "@types/node": "^26.0.0",
     "@types/sass": "^1.45.0",
+    "@eslint/js": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
     "@typescript-eslint/parser": "^8.11.0",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "^9.13.0",
+    "eslint": "^10.11.0",
     "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-import-x": "^4.17.1",
     "eslint-plugin-no-loops": "^0.4.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.2.1",
@@ -55,8 +57,9 @@
     "sass": "^1.80.4",
     "semantic-release": "^25.0.0",
     "semantic-release-npm-github": "^6.0.0",
-    "typescript": "^7.0.2",
-    "typescript-eslint": "^8.11.0"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.11.0",
+    "@typescript/native": "npm:typescript@^7.0.2"
   },
   "config": {
     "commitizen": {

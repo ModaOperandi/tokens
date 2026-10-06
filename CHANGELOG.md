@@ -1,3 +1,82 @@
+## [6.6.167](https://github.com/ModaOperandi/tokens/compare/6.6.166...6.6.167) (2026-10-05)
+
+## [6.6.166](https://github.com/ModaOperandi/tokens/compare/6.6.165...6.6.166) (2026-10-05)
+
+## [6.6.165](https://github.com/ModaOperandi/tokens/compare/6.6.164...6.6.165) (2026-10-05)
+
+## [6.6.164](https://github.com/ModaOperandi/tokens/compare/6.6.163...6.6.164) (2026-10-02)
+
+## [6.6.163](https://github.com/ModaOperandi/tokens/compare/6.6.162...6.6.163) (2026-10-01)
+
+## [6.6.162](https://github.com/ModaOperandi/tokens/compare/6.6.161...6.6.162) (2026-10-01)
+
+## [6.6.161](https://github.com/ModaOperandi/tokens/compare/6.6.160...6.6.161) (2026-09-29)
+
+## [6.6.160](https://github.com/ModaOperandi/tokens/compare/6.6.159...6.6.160) (2026-09-28)
+
+## [6.6.159](https://github.com/ModaOperandi/tokens/compare/6.6.158...6.6.159) (2026-09-28)
+
+## [6.6.158](https://github.com/ModaOperandi/tokens/compare/6.6.157...6.6.158) (2026-09-25)
+
+## [6.6.157](https://github.com/ModaOperandi/tokens/compare/6.6.156...6.6.157) (2026-09-23)
+
+## [6.6.156](https://github.com/ModaOperandi/tokens/compare/6.6.155...6.6.156) (2026-09-23)
+
+## [6.6.155](https://github.com/ModaOperandi/tokens/compare/6.6.154...6.6.155) (2026-09-23)
+
+
+### Bug Fixes
+
+* swap eslint-plugin-import for import-x, add missing @eslint/js dep ([119d543](https://github.com/ModaOperandi/tokens/commit/119d5432537be73cc305862ac37630c5964c0787))
+
+## [6.6.154](https://github.com/ModaOperandi/tokens/compare/6.6.153...6.6.154) (2026-09-22)
+
+## [6.6.153](https://github.com/ModaOperandi/tokens/compare/6.6.152...6.6.153) (2026-09-22)
+
+## [6.6.152](https://github.com/ModaOperandi/tokens/compare/6.6.151...6.6.152) (2026-09-21)
+
+## [6.6.151](https://github.com/ModaOperandi/tokens/compare/6.6.150...6.6.151) (2026-09-21)
+
+## [6.6.150](https://github.com/ModaOperandi/tokens/compare/6.6.149...6.6.150) (2026-09-15)
+
+## [6.6.149](https://github.com/ModaOperandi/tokens/compare/6.6.148...6.6.149) (2026-09-14)
+
+## [6.6.148](https://github.com/ModaOperandi/tokens/compare/6.6.147...6.6.148) (2026-09-11)
+
+## [6.6.147](https://github.com/ModaOperandi/tokens/compare/6.6.146...6.6.147) (2026-09-11)
+
+## [6.6.146](https://github.com/ModaOperandi/tokens/compare/6.6.145...6.6.146) (2026-09-07)
+
+## [6.6.145](https://github.com/ModaOperandi/tokens/compare/6.6.144...6.6.145) (2026-09-07)
+
+## [6.6.144](https://github.com/ModaOperandi/tokens/compare/6.6.143...6.6.144) (2026-09-07)
+
+## [6.6.143](https://github.com/ModaOperandi/tokens/compare/6.6.142...6.6.143) (2026-09-04)
+
+## [6.6.142](https://github.com/ModaOperandi/tokens/compare/6.6.141...6.6.142) (2026-09-04)
+
+## [6.6.141](https://github.com/ModaOperandi/tokens/compare/6.6.140...6.6.141) (2026-09-02)
+
+## [6.6.140](https://github.com/ModaOperandi/tokens/compare/6.6.139...6.6.140) (2026-09-02)
+
+## [6.6.139](https://github.com/ModaOperandi/tokens/compare/6.6.138...6.6.139) (2026-08-31)
+
+## [6.6.138](https://github.com/ModaOperandi/tokens/compare/6.6.137...6.6.138) (2026-08-31)
+
+## [6.6.137](https://github.com/ModaOperandi/tokens/compare/6.6.136...6.6.137) (2026-08-28)
+
+## [6.6.136](https://github.com/ModaOperandi/tokens/compare/6.6.135...6.6.136) (2026-08-28)
+
+## [6.6.135](https://github.com/ModaOperandi/tokens/compare/6.6.134...6.6.135) (2026-08-24)
+
+## [6.6.134](https://github.com/ModaOperandi/tokens/compare/6.6.133...6.6.134) (2026-08-17)
+
+## [6.6.133](https://github.com/ModaOperandi/tokens/compare/6.6.132...6.6.133) (2026-08-17)
+
+## [6.6.132](https://github.com/ModaOperandi/tokens/compare/6.6.131...6.6.132) (2026-08-17)
+
+## [6.6.131](https://github.com/ModaOperandi/tokens/compare/6.6.130...6.6.131) (2026-08-14)
+
 ## [6.6.130](https://github.com/ModaOperandi/tokens/compare/6.6.129...6.6.130) (2026-08-11)
 
 ## [6.6.129](https://github.com/ModaOperandi/tokens/compare/6.6.128...6.6.129) (2026-08-10)
