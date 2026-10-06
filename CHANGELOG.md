@@ -1,3 +1,10 @@
+## [6.6.168](https://github.com/ModaOperandi/tokens/compare/6.6.167...6.6.168) (2026-10-06)
+
+
+### Bug Fixes
+
+* **build:** check with TypeScript 7 and preserve ES5 output ([0448822](https://github.com/ModaOperandi/tokens/commit/044882214311bcf11065d350d5e5309c2302c977))
+
 ## [6.6.167](https://github.com/ModaOperandi/tokens/compare/6.6.166...6.6.167) (2026-10-05)
 
 ## [6.6.166](https://github.com/ModaOperandi/tokens/compare/6.6.165...6.6.166) (2026-10-05)
