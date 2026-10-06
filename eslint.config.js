@@ -4,7 +4,6 @@ const tsParser = require('@typescript-eslint/parser');
 const prettierRecommended = require('eslint-plugin-prettier/recommended');
 const globals = require('globals');
 const noLoops = require('eslint-plugin-no-loops');
-const typescriptEslint = require('@typescript-eslint/eslint-plugin');
 // eslint-plugin-import has no released version supporting ESLint 10 (its
 // peerDependencies cap at ^9); eslint-plugin-import-x is the actively
 // maintained fork that does, and mirrors the same import/* rule set, so we
@@ -39,7 +38,6 @@ module.exports = [
     },
     plugins: {
       'no-loops': noLoops,
-      '@typescript-eslint': typescriptEslint,
       import: importPlugin
     },
     rules: {

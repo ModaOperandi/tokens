@@ -5,7 +5,11 @@
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es6", "es2016", "es2017"],
+    "lib": [
+      "es6",
+      "es2016",
+      "es2017"
+    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -17,8 +21,18 @@
     "rootDir": "src",
     "sourceMap": true,
     "strictNullChecks": true,
-    "target": "es5"
+    "target": "es5",
+    "types": [
+      "node"
+    ]
   },
-  "include": ["src/*.ts", ".*.js", "*.js", "*.d.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/*.ts",
+    ".*.js",
+    "*.js",
+    "*.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
