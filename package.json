@@ -35,7 +35,7 @@
     "@commitlint/cli": "^21.0.0",
     "@commitlint/config-conventional": "^21.0.0",
     "@moda/node-sass-export": "^0.1.1",
-    "@types/color-string": "^1.5.5",
+    "@types/color-string": "^2.1.4",
     "@types/node": "^26.0.0",
     "@types/sass": "^1.45.0",
     "@eslint/js": "^10.0.1",
